@@ -83,6 +83,7 @@ img.logo {
 	padding-right: 15px;
 	margin-top: 18px;
 	font-weight: bold;
+	width: 230px;
 }
 #bubble #downloadButton {
 	width: 205px;
@@ -93,7 +94,7 @@ img.logo {
 	background-image: -webkit-linear-gradient(bottom, rgb(129,189,222) 25%, rgb(161,222,255) 63%);
 	background-image: -ms-linear-gradient(bottom, rgb(129,189,222) 25%, rgb(161,222,255) 63%);
 	box-shadow: 4px 4px #222;
-	border-radius: 12px 0 12px 12px;
+	border-radius: 10px 0 10px 10px;
 	padding: 10px;
 }
 #bubble #downloadButton:hover {

@@ -28,22 +28,35 @@ function dialogBox(data, closeable, onClose) {
 	});
 }
 
+var supportedText = 'Cryptocat installs in your browser within seconds and then easily opens whenever you need it.';
+var unsupportedText = 'Cryptocat is currently only available for <a href="https://google.com/chrome" target="_blank">Google Chrome</a> and <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a>. Switch to one of the world\'s leading browsers today and enjoy Cryptocat forever.';
+
 var downloadButton = [];
 downloadButton['chrome'] = '<a href="#"><div id="downloadButton">'
 	+ '<img id="browserLogo" src="img/chrome.png" alt="Google Chrome" />'
 	+ '<h1>Download for Google Chrome</h1>'
 	+ '</div>'
-	+ '</a>';
+	+ '</a><div class="downloadText">' + supportedText + '</div>';
 downloadButton['firefox'] = '<a href="#"><div id="downloadButton">'
 	+ '<img id="browserLogo" src="img/firefox.png" alt="Mozilla Firefox" />'
 	+ '<h1>Download for Mozilla Firefox</h1>'
 	+ '</div>'
-	+ '</a>';
-downloadButton['other'] = '<a href="#"><div id="downloadButton">'
-	+ '<img id="browserLogo" src="img/chrome.png" alt="Google Chrome" />'
+	+ '</a><div class="downloadText">' + supportedText + '</div>';
+downloadButton['opera'] = '<a href="#"><div id="downloadButton">'
+	+ '<img id="browserLogo" src="img/opera.png" alt="Google Chrome" />'
 	+ '<h1>Your Browser is Not Supported.</h1>'
 	+ '</div>'
-	+ '</a>';
+	+ '</a><div class="downloadText">' + unsupportedText + '</div>';
+downloadButton['safari'] = '<a href="#"><div id="downloadButton">'
+	+ '<img id="browserLogo" src="img/safari.png" alt="Google Chrome" />'
+	+ '<h1>Your Browser is Not Supported.</h1>'
+	+ '</div>'
+	+ '</a><div class="downloadText">' + unsupportedText + '</div>';
+downloadButton['ie'] = '<a href="#"><div id="downloadButton">'
+	+ '<img id="browserLogo" src="img/ie.png" alt="Google Chrome" />'
+	+ '<h1>Your Browser is Not Supported.</h1>'
+	+ '</div>'
+	+ '</a><div class="downloadText">' + unsupportedText + '</div>';
 
 if (navigator.userAgent.match('Chrome')) {
 	$('#download').html(downloadButton['chrome']);
@@ -52,6 +65,16 @@ else if (navigator.userAgent.match('Firefox')) {
 	$('#download').html(downloadButton['firefox']);
 	$('#browserLogo').css('bottom', '8px');
 }
+else if (navigator.userAgent.match('Opera')) {
+	$('#download').html(downloadButton['opera']);
+	$('#browserLogo').css('bottom', '11px');
+	$('#downloadButton').css('cursor', 'default');
+}
+else if (navigator.userAgent.match('Internet Explorer')) {
+	$('#download').html(downloadButton['ie']);
+	$('#downloadButton').css('cursor', 'default');
+}
 else {
-	$('#download').html(downloadButton['other']);
+	$('#download').html(downloadButton['safari']);
+	$('#downloadButton').css('cursor', 'default');
 }
