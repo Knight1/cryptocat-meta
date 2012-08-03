@@ -29,7 +29,7 @@ function dialogBox(data, closeable, onClose) {
 }
 
 var supportedText = 'Cryptocat installs in your browser within seconds and then easily opens whenever you need it.';
-var unsupportedText = 'Cryptocat is currently only available for <a href="https://google.com/chrome" target="_blank">Google Chrome</a> and <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a>. Switch to one of the world\'s leading browsers today and enjoy Cryptocat forever.';
+var unsupportedText = 'Cryptocat is currently only available for <a href="https://google.com/chrome" target="_blank">Google Chrome</a> and <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a>. Switch to one of the world\'s leading browsers today to use Cryptocat.';
 
 var downloadButton = [];
 downloadButton['chrome'] = '<a href="#"><div id="downloadButton">'
@@ -54,7 +54,7 @@ downloadButton['safari'] = '<a href="#"><div id="downloadButton">'
 	+ '</a><div class="downloadText">' + unsupportedText + '</div>';
 downloadButton['ie'] = '<a href="#"><div id="downloadButton">'
 	+ '<img id="browserLogo" src="img/ie.png" alt="Google Chrome" />'
-	+ '<h1>Your Browser is Not Supported.</h1>'
+	+ '<h1>Your Browser is Absolutely Terrible.</h1>'
 	+ '</div>'
 	+ '</a><div class="downloadText">' + unsupportedText + '</div>';
 
