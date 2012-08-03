@@ -105,6 +105,9 @@ img.logo {
 	background-image: -webkit-linear-gradient(bottom, rgb(139,208,245) 25%, rgb(182,226,250) 63%);
 	background-image: -ms-linear-gradient(bottom, rgb(139,208,245) 25%, rgb(182,226,250) 63%);
 }
+#bubble #downloadButton a:hover {
+	text-decoration: none;
+}
 #bubble #downloadButton h1 {
 	float: left;
 	width: 115px;
