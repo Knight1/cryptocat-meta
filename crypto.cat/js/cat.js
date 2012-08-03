@@ -54,7 +54,7 @@ downloadButton['safari'] = '<a href="#"><div id="downloadButton">'
 	+ '</a><div class="downloadText">' + unsupportedText + '</div>';
 downloadButton['ie'] = '<a href="#"><div id="downloadButton">'
 	+ '<img id="browserLogo" src="img/ie.png" alt="Google Chrome" />'
-	+ '<h1>Your Browser is Absolutely Terrible.</h1>'
+	+ '<h1>Your Browser is Terrible.</h1>'
 	+ '</div>'
 	+ '</a><div class="downloadText">' + unsupportedText + '</div>';
 
