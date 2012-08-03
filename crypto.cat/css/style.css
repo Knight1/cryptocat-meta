@@ -12,7 +12,7 @@ a {
 	color: #97CEEC;
 	text-decoration: none;
 }
-a:hover {
+#info a:hover, #loginLinks a:hover {
 	text-decoration: underline;
 }
 img.logo {
@@ -104,9 +104,6 @@ img.logo {
 	background-image: -moz-linear-gradient(bottom, rgb(139,208,245) 25%, rgb(182,226,250) 63%);
 	background-image: -webkit-linear-gradient(bottom, rgb(139,208,245) 25%, rgb(182,226,250) 63%);
 	background-image: -ms-linear-gradient(bottom, rgb(139,208,245) 25%, rgb(182,226,250) 63%);
-}
-#bubble #downloadButton a:hover {
-	text-decoration: none;
 }
 #bubble #downloadButton h1 {
 	float: left;
