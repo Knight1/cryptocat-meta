@@ -12,7 +12,7 @@ a {
 	color: #97CEEC;
 	text-decoration: none;
 }
-#info a:hover, #loginLinks a:hover {
+#info a:hover, #loginLinks a:hover, #demoButton a:hover {
 	text-decoration: underline;
 }
 img.logo {
@@ -116,6 +116,16 @@ img.logo {
 	text-shadow: 1px 1px #666;
 	line-height: 20px;
 	color: #FFF;
+}
+#bubble #demoButton {
+	float: right;
+	width: 210px;
+	height: 10px;
+	padding: 5px 10px 10px 10px;
+	margin: 20px 15px 0 0;
+	border-radius: 0 0 8px 8px;
+	background-color: #222;
+	font-size: 10px;
 }
 #bubble #browserLogo {
 	width: 90px;
