@@ -93,13 +93,14 @@ div.intro {
 
 div.big {
 	background-color: rgba(0, 0, 0, 0.90);
-	box-shadow: 2px 2px #FFFFFF;
+	box-shadow: 2px 2px #97CEEC;
 	width: 50%;
 	height: 137px;
 	padding: 15px 10px 10px 10px;
 	color: #FFF;
 	float: left;
 	min-width: 550px;
+	border-radius: 10px 0 10px 10px;
 }
 
 div.big p {
@@ -147,9 +148,8 @@ div.options h2 {
 
 div.option {
 	background-color: rgba(0, 0, 0, 0.90);
-	box-shadow: 2px 2px #333;
-	border-radius: 10px;
-	border-top-right-radius: 0;
+	box-shadow: 2px 2px #97CEEC;
+	border-radius: 10px 0 10px 10px;
 	width: 98%;
 	min-width: 470px;
 	padding: 5px;
@@ -200,6 +200,7 @@ div.main {
 	position: relative;
 	z-index: 0;
 	background-repeat: repeat-y;
+	padding-bottom: 20px;
 }
 
 div.main h1, div.main h2 {
