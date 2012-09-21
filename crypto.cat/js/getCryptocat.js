@@ -33,27 +33,27 @@ function getDownloadButton() {
 	var downloadButton = [];
 	downloadButton['chrome'] = '<a href="#"><div id="downloadButton" dir="ltr">'
 		+ '<img id="browserLogo" src="img/chrome.png" alt="Google Chrome" />'
-		+ '<p>' + language['mainWindow']['getChrome'] + '</p>'
+		+ '<p dir="rtl">' + language['mainWindow']['getChrome'] + '</p>'
 		+ '</div>'
 		+ '</a><div class="downloadText">' + language['mainWindow']['supportedText'] + '</div>';
-	downloadButton['firefox'] = '<a href="#"><div id="downloadButton">'
+	downloadButton['firefox'] = '<a href="#"><div id="downloadButton" dir="ltr">'
 		+ '<img id="browserLogo" src="img/firefox.png" alt="Mozilla Firefox" />'
-		+ '<h1>' + language['mainWindow']['getFirefox'] + '</h1>'
+		+ '<p dir="rtl">' + language['mainWindow']['getFirefox'] + '</p>'
 		+ '</div>'
 		+ '</a><div class="downloadText">' + language['mainWindow']['supportedText'] + '</div>';
-	downloadButton['opera'] = '<a href="#"><div id="downloadButton">'
+	downloadButton['opera'] = '<a href="#"><div id="downloadButton" dir="ltr">'
 		+ '<img id="browserLogo" src="img/opera.png" alt="Google Chrome" />'
-		+ '<h1>' + language['mainWindow']['notSupported'] + '</h1>'
+		+ '<p dir="rtl">' + language['mainWindow']['notSupported'] + '</p>'
 		+ '</div>'
 		+ '</a><div class="downloadText">' + language['mainWindow']['unsupportedText'] + '</div>';
-	downloadButton['safari'] = '<a href="#"><div id="downloadButton">'
+	downloadButton['safari'] = '<a href="#"><div id="downloadButton" dir="ltr">'
 		+ '<img id="browserLogo" src="img/safari.png" alt="Google Chrome" />'
-		+ '<h1>' + language['mainWindow']['notSupported'] + '</h1>'
+		+ '<p dir="rtl">' + language['mainWindow']['notSupported'] + '</p>'
 		+ '</div>'
 		+ '</a><div class="downloadText">' + language['mainWindow']['unsupportedText'] + '</div>';
-	downloadButton['ie'] = '<a href="#"><div id="downloadButton">'
+	downloadButton['ie'] = '<a href="#"><div id="downloadButton" dir="ltr">'
 		+ '<img id="browserLogo" src="img/ie.png" alt="Google Chrome" />'
-		+ '<h1>' + language['mainWindow']['notSupported'] + '</h1>'
+		+ '<p dir="rtl">' + language['mainWindow']['notSupported'] + '</p>'
 		+ '</div>'
 		+ '</a><div class="downloadText">' + language['mainWindow']['unsupportedText'] + '</div>';
 	if (navigator.userAgent.match('Chrome')) {

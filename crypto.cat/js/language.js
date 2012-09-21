@@ -45,17 +45,17 @@ language.ca = {
 	'direction': 'ltr',
 	'font-family': 'Helvetica, Arial, Verdana',
 	'mainWindow': {
-		'introHeader': '﻿Converses privades per a tothom',
+		'introHeader': '﻿Converses privades per a tothom.',
 		'introParagraph1': 'Cryptocat es una plataforma de missatgeria instantània que et permet mantenir converses privades fàcilment amb els amics. Els missatges es xifren abans de sortir de la teva pantalla i són protegits de ser vistos per terceres persones, incloses nosaltres.',
 		'introParagraph2': 'Cryptocat és free software construït sobre estàndards oberts. El nostre procés de desenvolupament està en període d\'evaluació continuada per part d\'una comunitat de voluntaris i entusiastes. <a href="https://project.crypto.cat" target="_blank">Descobreix més sobre el Projecte Cryptocat</a>.',
 		'project': 'Projecte',
 		'blog': 'Bloc',
 		'source': 'Font',
-		'supportedText': 'Cryptocat easily installs in your browser for quick access whenever you need it.',
-		'unsupportedText': 'Cryptocat is currently only available for <a href="https://google.com/chrome" target="_blank">Google Chrome</a> and <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a>. Switch to one of the world\'s leading browsers today to use Cryptocat.',
-		'getChrome': 'Get Cryptocat for Google Chrome',
-		'getFirefox': 'Get Cryptocat for Mozilla Firefox',
-		'notSupported': 'Your Browser is Not Supported.'
+		'supportedText': 'Cryptocat s\'instal·la fàcilment al teu navegador per tenir-hi accés ràpidament quan ho necessitis.',
+		'unsupportedText': 'Actualment, Cryptocat només està disponible per a <a href="https://google.com/chrome" target="_blank">Google Chrome</a> i <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a>. Canvia\'t avui a un dels navegadors més avançats per usar Cryptocat.',
+		'getChrome': 'Aconsegueix Cryptocat per a Google Chrome',
+		'getFirefox': 'Aconsegueix Cryptocat per a Mozilla Firefox',
+		'notSupported': 'El teu navegador no està suportat.'
 	}
 }
 
@@ -94,6 +94,25 @@ language.ar = {
 		'getChrome': 'إحصل على كريبتوكات ل-Google Chrome',
 		'getFirefox': 'إحصل على كريبتوكات ل-Mozilla Firefox',
 		'notSupported': 'متصفحك ليس ملائم مع كريبتوكات.'
+	}
+}
+
+language.it = {
+	'language': 'it',
+	'direction': 'ltr',
+	'font-family': 'Helvetica, Arial, Verdana',
+	'mainWindow': {
+		'introHeader': 'Conversazioni Private per Tutti.',
+		'introParagraph1': 'Cryptocat è una piattaforma di messaggistica istantanea che ti permette facilmente di avere conversazioni private con amici. I messaggi sono cifrati prima di lasciare il tuo schermo e protetti dall\'essere visti da terzi, compresi noi.',
+		'introParagraph2': 'Cryptocat è un software free sviluppato su standard aperti. Il nostro processo di sviluppo è sotto continuo esame da una comunità di volontari e appassionati. <a href="https://project.crypto.cat" target="_blank">Impara di più sul Cryptocat Project.</a>',
+		'project': 'Progetto',
+		'blog': 'Blog',
+		'source': 'Codice',
+		'supportedText': 'Cryptocat si installa facilmente nel tuo browser per un accesso veloce ogni volta che ne hai bisogno.',
+		'unsupportedText': 'Cryptocat è attualmente disponibile solo per Google Chrome e Mozilla Firefox. Passa ad uno dei principali browser al mondo di oggi per usare Cryptocat.',
+		'getChrome': 'Scarica Cryptocat per Google Chrome',
+		'getFirefox': 'Scarica Cryptocat per Mozilla Firefox',
+		'notSupported': 'Il tuo Browser Non è Supportato'
 	}
 }
 
