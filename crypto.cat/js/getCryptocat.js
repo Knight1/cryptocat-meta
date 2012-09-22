@@ -29,19 +29,25 @@ function dialogBox(data, closeable, onClose) {
 	});
 }
 
+var downloadLink = {
+	'chrome': '#',
+	'firefox': '#',
+	'safari': '#'
+}
+
 function getDownloadButton() {
 	var downloadButton = [];
-	downloadButton['chrome'] = '<a href="#"><div id="downloadButton" dir="ltr">'
+	downloadButton['chrome'] = '<a href="' + downloadLink['chrome'] + '"><div id="downloadButton" dir="ltr">'
 		+ '<img id="browserLogo" src="img/chrome.png" alt="Google Chrome" />'
 		+ '<p dir="rtl">' + language['mainWindow']['getChrome'] + '</p>'
 		+ '</div>'
 		+ '</a><div class="downloadText">' + language['mainWindow']['supportedText'] + '</div>';
-	downloadButton['firefox'] = '<a href="#"><div id="downloadButton" dir="ltr">'
+	downloadButton['firefox'] = '<a href="' + downloadLink['firefox'] + '"><div id="downloadButton" dir="ltr">'
 		+ '<img id="browserLogo" src="img/firefox.png" alt="Mozilla Firefox" />'
 		+ '<p dir="rtl">' + language['mainWindow']['getFirefox'] + '</p>'
 		+ '</div>'
 		+ '</a><div class="downloadText">' + language['mainWindow']['supportedText'] + '</div>';
-	downloadButton['safari'] = '<a href="#"><div id="downloadButton" dir="ltr">'
+	downloadButton['safari'] = '<a href="' + downloadLink['safari'] + '"><div id="downloadButton" dir="ltr">'
 		+ '<img id="browserLogo" src="img/safari.png" alt="Apple Safari" />'
 		+ '<p dir="rtl">' + language['mainWindow']['getSafari'] + '</p>'
 		+ '</div>'
