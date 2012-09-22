@@ -1,6 +1,13 @@
 $('.input[title]').qtip();
 $('.button[title]').qtip();
-var language = Language.set('en');
+var language = window.navigator.userLanguage
+	|| window.navigator.language;
+try {
+		language = Language.set(language);
+	}
+catch(err) {
+	language = Language.set('en');
+}
 
 function dialogBox(data, closeable, onClose) {
 	if ($('#dialogBox').css('top') !== '-450px') {
