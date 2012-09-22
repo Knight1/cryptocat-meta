@@ -36,6 +36,7 @@ language.en = {
 		'unsupportedText': 'Cryptocat is currently only available for <a href="https://google.com/chrome" target="_blank">Google Chrome</a> and <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a>. Switch to one of the world\'s leading browsers today to use Cryptocat.',
 		'getChrome': 'Get Cryptocat for Google Chrome',
 		'getFirefox': 'Get Cryptocat for Mozilla Firefox',
+		'getSafari': 'Get Cryptocat for Safari',
 		'notSupported': 'Your Browser is Not Supported.'
 	}
 }
@@ -55,6 +56,7 @@ language.ca = {
 		'unsupportedText': 'Actualment, Cryptocat només està disponible per a <a href="https://google.com/chrome" target="_blank">Google Chrome</a> i <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a>. Canvia\'t avui a un dels navegadors més avançats per usar Cryptocat.',
 		'getChrome': 'Aconsegueix Cryptocat per a Google Chrome',
 		'getFirefox': 'Aconsegueix Cryptocat per a Mozilla Firefox',
+		'getSafari': 'Aconsegueix Cryptocat per a Safari',
 		'notSupported': 'El teu navegador no està suportat.'
 	}
 }
@@ -74,6 +76,7 @@ language.fr = {
 		'unsupportedText': 'Cryptocat est actuellement disponible pour <a href="https://google.com/chrome" target="_blank">Google Chrome</a> et <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a>. Installez un des principaux navigateurs du monde d\'aujourd\'hui pour utiliser Cryptocat.',
 		'getChrome': 'Obtenez Cryptocat pour Google Chrome',
 		'getFirefox': 'Obtenez Cryptocat pour Mozilla Firefox',
+		'getSafari': 'Obtenez Cryptocat pour Safari',
 		'notSupported': 'Votre Navigateur n\'est pas Supporté.'
 	}
 }
@@ -93,6 +96,7 @@ language.ar = {
 		'unsupportedText': 'كريبتوكات حالياً ليس ملائم إلا مع Google Chrome و-Mozilla Firefox. سجل احدهم لإستعمال كريبتوكات.',
 		'getChrome': 'إحصل على كريبتوكات ل-Google Chrome',
 		'getFirefox': 'إحصل على كريبتوكات ل-Mozilla Firefox',
+		'getSafari': 'إحصل على كريبتوكات ل-Safari',
 		'notSupported': 'متصفحك ليس ملائم مع كريبتوكات.'
 	}
 }
@@ -112,6 +116,7 @@ language.it = {
 		'unsupportedText': 'Cryptocat è attualmente disponibile solo per Google Chrome e Mozilla Firefox. Passa ad uno dei principali browser al mondo di oggi per usare Cryptocat.',
 		'getChrome': 'Scarica Cryptocat per Google Chrome',
 		'getFirefox': 'Scarica Cryptocat per Mozilla Firefox',
+		'getSafari': 'Scarica Cryptocat per Safari',
 		'notSupported': 'Il tuo Browser Non è Supportato'
 	}
 }

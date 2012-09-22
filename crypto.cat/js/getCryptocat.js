@@ -41,18 +41,18 @@ function getDownloadButton() {
 		+ '<p dir="rtl">' + language['mainWindow']['getFirefox'] + '</p>'
 		+ '</div>'
 		+ '</a><div class="downloadText">' + language['mainWindow']['supportedText'] + '</div>';
-	downloadButton['opera'] = '<a href="#"><div id="downloadButton" dir="ltr">'
-		+ '<img id="browserLogo" src="img/opera.png" alt="Google Chrome" />'
-		+ '<p dir="rtl">' + language['mainWindow']['notSupported'] + '</p>'
-		+ '</div>'
-		+ '</a><div class="downloadText">' + language['mainWindow']['unsupportedText'] + '</div>';
 	downloadButton['safari'] = '<a href="#"><div id="downloadButton" dir="ltr">'
-		+ '<img id="browserLogo" src="img/safari.png" alt="Google Chrome" />'
+		+ '<img id="browserLogo" src="img/safari.png" alt="Apple Safari" />'
+		+ '<p dir="rtl">' + language['mainWindow']['getSafari'] + '</p>'
+		+ '</div>'
+		+ '</a><div class="downloadText">' + language['mainWindow']['supportedText'] + '</div>';
+	downloadButton['opera'] = '<a href="#"><div id="downloadButton" dir="ltr">'
+		+ '<img id="browserLogo" src="img/opera.png" alt="Opera" />'
 		+ '<p dir="rtl">' + language['mainWindow']['notSupported'] + '</p>'
 		+ '</div>'
 		+ '</a><div class="downloadText">' + language['mainWindow']['unsupportedText'] + '</div>';
 	downloadButton['ie'] = '<a href="#"><div id="downloadButton" dir="ltr">'
-		+ '<img id="browserLogo" src="img/ie.png" alt="Google Chrome" />'
+		+ '<img id="browserLogo" src="img/ie.png" alt="Internet Explorer" />'
 		+ '<p dir="rtl">' + language['mainWindow']['notSupported'] + '</p>'
 		+ '</div>'
 		+ '</a><div class="downloadText">' + language['mainWindow']['unsupportedText'] + '</div>';
@@ -74,7 +74,6 @@ function getDownloadButton() {
 	}
 	else {
 		$('#download').html(downloadButton['safari']);
-		$('#downloadButton').css('cursor', 'default');
 	}
 }
 
