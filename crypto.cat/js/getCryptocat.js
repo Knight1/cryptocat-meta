@@ -37,9 +37,9 @@ function dialogBox(data, closeable, onClose) {
 }
 
 var downloadLink = {
-	'chrome': '#',
-	'firefox': '#',
-	'safari': '#'
+	'chrome': 'https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij',
+	'firefox': 'https://addons.mozilla.org/en-US/firefox/addon/cryptocat/',
+	'safari': 'https://crypto.cat/get/cryptocat.safariextz'
 }
 
 function getDownloadButton() {
