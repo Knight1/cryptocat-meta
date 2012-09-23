@@ -41,6 +41,27 @@ language.en = {
 	}
 }
 
+language.lol = {
+	'language': 'lol',
+	'direction': 'ltr',
+	'font-family': 'Helvetica, Arial, Verdana',
+	'mainWindow': {
+		'introHeader': '﻿Private Conversashuns 4 Evrwun.',
+		'introParagraph1': 'Cryptocat iz an instant mesagin platform dat lets u easily has private conversashuns wif frenz. Mesagez r encryptd before leavin ur screen an r protectd frum bean viewd by any third party, even frum us.',
+		'introParagraph2': 'Cryptocat iz free software built on open standardz. R development proces iz undr continuous examinashun by community ov volunteers an enthusiasts. <a href="https://project.crypto.cat" target="_blank">Lern moar bout teh Cryptocat Project</a>.',
+		'project': 'Project',
+		'blog': 'Blog',
+		'source': 'Source',
+		'supportedText': 'Cryptocat easily installs in ur browsr 4 quick acces whenevr u ned it.',
+		'unsupportedText': 'Cryptocat iz currently only available 4 <a href="https://google.com/chrome" target="_blank">Google Chrome</a>, <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a> an <a href="http://www.apple.com/safari/" target="_blank">Safari</a>. Switch 2 wan ov teh wurld\'s leadin browsers todai 2 use Cryptocat.',
+		'getChrome': 'Git Cryptocat 4 Google Chrome',
+		'getFirefox': 'Git Cryptocat 4 Mozilla Firefox',
+		'getSafari': 'Git Cryptocat 4 Safari',
+		'notSupported': 'Ur Browsr Iz Not Supportd'
+	}
+}
+
+
 language.ca = {
 	'language': 'ca',
 	'direction': 'ltr',
