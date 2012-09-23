@@ -18,27 +18,20 @@
 			<a target="_blank" href="https://github.com/kaepora/cryptocat">Source Code</a>
 		</div>
 	</div>
-	<div class="main" style="min-height:1050px;height:100%;margin:-19px auto 0 auto;padding-top:20px;border-top:none;">
+	<div class="main" style="min-height:800px;height:100%;margin:-19px auto 0 auto;padding-top:20px;border-top:none;">
 		<div class="column2">
-			<h1>Methodology</h1>
-			<p>Cryptocat relies on implementing a variety of technologies in order to achieve its goals and address the problems it means to solve. Here's a current list of what we're trying to do, how we're doing it, and the limitations we're currently faced with.</p>
-			<p><strong>Providing Universally Accessible Encrypted Instant Messaging:</strong></p>
-			<ul>
-				<li><strong>Cryptography</strong></li>
+			<h1>People</h1>
+			<strong>Nadim Kobeissi</strong> (<a href="mailto:nadim@crypto.cat">nadim@crypto.cat</a>): Founder and lead developer of the Cryptocat Project.
+			<br />
+			<strong>Arlo Breault</strong> (<a href="mailto:arlo@crypto.cat">arlo@crypto.cat</a>): OTR library developer, beta tester.
+			<br /><br /><br />
+			<h1>What Cryptocat Doesn't Do</h1>
+				<p>While Cryptocat aims to offer strongly encrypted, private Instant Messaging, it's important to note what Cryptocat does <i>not</i> protect you against:</p>
 				<ul>
-					<li><strong>Current Technologies:</strong> We currently rely on the <a href="../documents/">Cryptocat protocol</a> which allows for multi-party encrypted chatting (with file sharing and private messaging) using AES, Diffie-Hellman, and Whirlpool. The protocol also offers fingerprint-based user identity verification, includes message authentication, protection against various types of cryptographic attacks, and is open for peer review. All cryptographic operations are done on the client side.</li><br />
-					<li><strong>Present Limitations:</strong> Because of the young age of the Cryptocat Project, our protocol does not benefit from the same level of peer review that protocols such as the decade-old <a href="https://cypherpunks.ca/otr/" target="_blank">OTR</a> enjoy. However, we still opted for implementing our own protocol due to the high level of ambiguity and lack of research done regarding the implementation of a version of OTR that works with multiple parties or supports encrypted file sharing.</li><br />
-					<li><strong>Future Progress:</strong> We have begun researching and implementing the very first working <a href="https://github.com/kaepora/cryptocat/blob/master/spec/mpOTR.txt" target="_blank">Multi-Party OTR specification</a>. While this is still a work in progress, we hope that the next major revision of the Cryptocat protocol will in fact thus benefit from the OTR body of research as well.</li>
+					<li><strong>Cryptocat does not anonymize you:</strong> While your communications are encrypted, your identity can still be traced since Cryptocat does not mask your IP address. For anonymization, we highly recommend using <a href="https://torproject.org" target="_blank">Tor</a>. Cryptocat even offers a Tor Hidden Service at <a href="http://xdtfje3c46d2dnjd.onion" target="_blank">xdtfje3c46d2dnjd.onion</a>.</li><br />
+					<li><strong>Cryptocat does not protect against key loggers:</strong> Your messages are encrypted as they go through the wire, but that doesn't mean that your keyboard is necessarily safe. Cryptocat does not protect against hardware or software key loggers which might be snooping on your keyboard strokes and sending them to an undesired third party.</li><br />
+					<li><strong>Cryptocat does not protect against untrustworthy people:</strong> Parties you're conversing with may still leak your messages without your knowledge. Cryptocat aims to make sure that only the parties you're talking to get your messages, but that doesn't mean these parties are necessarily trustworthy.</li>
 				</ul>
-			</ul>
-			<ul>
-				<li><strong>Secure Accessibility</strong></li>
-				<ul>
-					<li><strong>Current Technologies:</strong> Cryptocat can be currently accessed via a web installation using any modern desktop or mobile browser, with the server code being intentionally made easy to install so that other Cryptocat web servers can be deployed by third parties. This method, while the most accessible, is not as secure as the Cryptocat browser extensions (currently available for <a href="https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij/" target="_blank">Google Chrome</a>) since it does not protect agains the theoretical possibility of the user being served maliciously modified code. Our conclusion is that the more local browser extensions/native apps, the better.</li><br />
-					<li><strong>Present Limitations:</strong> Currently, a local Cryptocat app is only available for <a href="https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij/" target="_blank">Google Chrome</a>. More platforms must be supported in order to increase Cryptocat's potential for secure accessibility.</li><br />
-					<li><strong>Future Progress:</strong> We are currently developing a Firefox Cryptocat app, as well as native Cryptocat applications for all modern mobile devices, including iOS, Android and BlackBerry. This proliferation of native Cryptocat apps for both desktops and mobile devices will greatly increase the project's secure accessibility.</li>
-				</ul>
-			</ul>
 		</div>
 			<div class="column1">
 				<h1>Development Process</h1>
@@ -48,14 +41,7 @@
 				<h1>How Cryptocat Works</h1>
 				<p>Learn more about how Cryptocat works with Alice and Bob in <i>Cryptocat Adventure!</i>:</p>
 				<iframe src="https://player.vimeo.com/video/38439169?byline=0&amp;portrait=0&amp;color=97ceec" width="470" height="264" allowFullScreen></iframe>
-				<br /><br /><br />
-				<h1>What Cryptocat Doesn't Do</h1>
-				<p>While Cryptocat aims to offer strongly encrypted, private Instant Messaging, it's important to note what Cryptocat does <i>not</i> protect you against:</p>
-				<ul>
-					<li><strong>Cryptocat does not anonymize you:</strong> While your communications are encrypted, your identity can still be traced since Cryptocat does not mask your IP address. For anonymization, we highly recommend using <a href="https://torproject.org" target="_blank">Tor</a>. Cryptocat even offers a Tor Hidden Service at <a href="http://xdtfje3c46d2dnjd.onion" target="_blank">xdtfje3c46d2dnjd.onion</a>.</li><br />
-					<li><strong>Cryptocat does not protect against key loggers:</strong> Your messages are encrypted as they go through the wire, but that doesn't mean that your keyboard is necessarily safe. Cryptocat does not protect against hardware or software key loggers which might be snooping on your keyboard strokes and sending them to an undesired third party.</li><br />
-					<li><strong>Cryptocat does not protect against untrustworthy people:</strong> Parties you're conversing with may still leak your messages without your knowledge. Cryptocat aims to make sure that only the parties you're talking to get your messages, but that doesn't mean these parties are necessarily trustworthy.</li>
-				</ul>
+				<br />
 			</div>
 	</div>
 	<div class="footer">

@@ -50,6 +50,10 @@ a {
 	text-decoration: none;
 }
 
+a img {
+	border: none;
+}
+
 a:hover {
 	text-decoration: underline;
 }
