@@ -12,6 +12,9 @@ a {
 	color: #97CEEC;
 	text-decoration: none;
 }
+a img {
+	border: none;
+}
 #info a:hover, #loginLinks a:hover, #demoButton a:hover {
 	text-decoration: underline;
 }

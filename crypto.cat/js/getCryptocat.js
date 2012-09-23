@@ -81,7 +81,7 @@ function getDownloadButton() {
 		$('#browserLogo').css('bottom', '11px');
 		$('#downloadButton').css('cursor', 'default');
 	}
-	else if (navigator.userAgent.match('Internet Explorer')) {
+	else if (navigator.userAgent.match('MSIE')) {
 		$('#download').html(downloadButton['ie']);
 		$('#downloadButton').css('cursor', 'default');
 	}
