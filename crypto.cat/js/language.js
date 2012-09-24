@@ -303,6 +303,26 @@ language.nl = {
 	}
 }
 
+language.pt = {
+	'language': 'pt',
+	'direction': 'ltr',
+	'font-family': 'Helvetica, Arial, Verdana',
+	'mainWindow': {
+		'introHeader': 'Conversa privada para todos.',
+		'introParagraph1': 'Cryptocat é uma plataforma de mensagens instantâneas que permite que você tenha conversas privadas com seus amigos. As mensagens são criptografadas antes de sair do seu computador e são protegidas de serem vistas por terceiros, até de nós.',
+		'introParagraph2': 'Cryptocat é um software livre construído com padrões abertos. Nosso processo de desenvolvimento está sob examinação contínua por uma comunidade de voluntários e entusiastas. <a href="https://project.crypto.cat" target="_blank">Aprenda mais sobre o Projeto Cryptocat</a>.',
+		'project': 'Projeto',
+		'blog': 'Blog',
+		'source': 'Código',
+		'supportedText': 'Cryptocat se instala facilmente no seu navegador, permitindo fácil e rápido acesso assim que necessário.',
+		'unsupportedText': 'Cryptocat é disponibilizado nas versões para <a href="https://google.com/chrome" target="_blank">Google Chrome</a>, <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a> e <a href="http://www.apple.com/safari/" target="_blank">Safari</a>. Baixe um dos navegadores mais usados do mundo para utilizar Cryptocat.',
+		'getChrome': 'Baixe o Cryptocat para Google Chrome',
+		'getFirefox': 'Baixe o Cryptocat para Mozilla Firefox',
+		'getSafari': 'Baixe o Cryptocat para Safari',
+		'notSupported': 'Seu navegador não é compatível'
+	}
+}
+
 language.ru = {
 	'language': 'ru',
 	'direction': 'ltr',
