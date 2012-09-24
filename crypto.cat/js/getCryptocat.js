@@ -1,5 +1,3 @@
-$('.input[title]').qtip();
-$('.button[title]').qtip();
 var language = window.navigator.userLanguage
 	|| window.navigator.language;
 try {
@@ -7,33 +5,6 @@ try {
 	}
 catch(err) {
 	language = Language.set('en');
-}
-
-function dialogBox(data, closeable, onClose) {
-	if ($('#dialogBox').css('top') !== '-450px') {
-		return false;
-	}
-	if (closeable) {
-		$('#dialogBoxClose').css('display', 'block');
-	}
-	$('#dialogBoxContent').html(data);
-	$('#dialogBox').animate({'top': '+=460px'}, 'fast').animate({'top': '-=10px'}, 'fast');
-	$('#dialogBoxClose').click(function() {
-		if ($('#dialogBoxClose').css('display') === 'none') {
-			return false;
-		}
-		$('#dialogBox').animate({'top': '+=10px'}, 'fast').animate({'top': '-450px'}, 'fast');
-		$('#dialogBoxClose').css('display', 'none');
-		if (onClose) {
-			onClose();
-		}
-		$('#userInputText').focus();
-	});
-	$(document).keydown(function(e) {
-		if (e.keyCode == 27) {
-			$('#dialogBoxClose').click();
-		}
-	});
 }
 
 var downloadLink = {
