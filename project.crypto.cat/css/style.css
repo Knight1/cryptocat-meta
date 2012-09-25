@@ -144,6 +144,7 @@ div.main {
 }
 
 div.main h1, div.main h2 {
+	margin-bottom: -10px;
 	color: #97CEEC;
 }
 
