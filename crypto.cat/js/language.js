@@ -383,6 +383,26 @@ language.pl = {
 	}
 }
 
+language.he = {
+	'language': 'he',
+	'direction': 'rtl',
+	'font-family': 'Helvetica, Arial, Verdana',
+	'mainWindow': {
+		'introHeader': 'שיחות חופשיות לכולם.',
+		'introParagraph1': 'Cryptocat היא פלטפורמת מסרים מידיים שמאפשרת לך לנהל שיחות פרטיות עם חברים בקלות. ההודעות מוצפנות לפני עזיבת המסך שלך ומוגנות מצפיה על ידי צד שלישי, אפילו מאיתנו.',
+		'introParagraph2': 'Cryptocat היא תוכנה חופשית ובנויה על סטנדרטים פתוחים. תהליך הפיתוח שלנו נמצא תחת בקרה מתמשכת על ידי קהילה של מתנדבי <a href="https://project.crypto.cat" target="_blank">ם. קראו עוד על פרוייקט Cryptocat</a>.',
+		'project': 'פרוייקט',
+		'blog': 'בלוג',
+		'source': 'מקור',
+		'supportedText': 'Cryptocat מותקן בקלות בדפדפן שלך לגישה מהירה מתי שנדרש.',
+		'unsupportedText': 'Cryptocat זמין כרגע רק עבור <a href="https://google.com/chrome" target="_blank">Google Chrome</a>, <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a> ו-<a href="http://www.apple.com/safari/" target="_blank">Safari</a>. רצוי לעבור לאחד הדפדפנים המובילים בעולם עוד היום על מנת להשתמש בCryptocat.',
+		'getChrome': 'הורד את Cryptocat לGoogle Chrome',
+		'getFirefox': 'הורד את Cryptocat לGoogle Chrome',
+		'getSafari': 'הורד את Cryptocat לSafari',
+		'notSupported': 'הדפדפן שלך אינו נתמך.'
+	}
+}
+
 language.zh = {
 	'language': 'zh',
 	'direction': 'ltr',
