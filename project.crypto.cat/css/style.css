@@ -130,8 +130,8 @@ div.main {
 	background-color: rgba(27, 34, 40, 0.97);
 	min-height: 700px;
 	height: 70%;
-	margin: 0 auto;
-	border-top: 4px solid #555;
+	margin: -10px auto 0 auto;
+	border-top: 4px solid #444;
 	border-bottom: none;
 	line-height: 1.5em;
 	color: #EEE;
