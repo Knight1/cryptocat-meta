@@ -46,10 +46,10 @@ language.lol = {
 	'direction': 'ltr',
 	'font-family': 'Helvetica, Arial, Verdana',
 	'mainWindow': {
-		'introHeader': '﻿Private Conversashuns 4 Evrwun.',
-		'introParagraph1': 'Cryptocat iz an instant mesagin platform dat lets u easily has private conversashuns wif frenz. Mesagez r encryptd before leavin ur screen an r protectd frum bean viewd by any third party, even frum us.',
+		'introHeader': '﻿I Can Haz Private Conversashuns?',
+		'introParagraph1': 'Cryptocat iz an instant mesagin platform dat let u ezzily has private conversashuns wif frenz. Mesagez r encryptd befor leavin ur screen an r protectd frum bean viewd by any third party, even frum us.',
 		'introParagraph2': 'Cryptocat iz free software built on open standardz. R development proces iz undr continuous examinashun by community ov volunteers an enthusiasts. <a href="https://project.crypto.cat" target="_blank">Lern moar bout teh Cryptocat Project</a>.',
-		'project': 'Project',
+		'project': 'Purroject',
 		'blog': 'Blog',
 		'source': 'Source',
 		'supportedText': 'Cryptocat easily installs in ur browsr 4 quick acces whenevr u ned it.',
@@ -399,23 +399,63 @@ language.he = {
 		'getChrome': 'הורד את Cryptocat לGoogle Chrome',
 		'getFirefox': 'הורד את Cryptocat לGoogle Chrome',
 		'getSafari': 'הורד את Cryptocat לSafari',
-		'notSupported': 'הדפדפן שלך אינו נתמך.'
+		'notSupported': 'הדפדפן שלך אינו נתמך'
 	}
 }
 
-language.zh = {
-	'language': 'zh',
+language.vi = {
+	'language': 'vi',
+	'direction': 'ltr',
+	'font-family': 'Helvetica, Arial, Verdana',
+	'mainWindow': {
+		'introHeader': 'Đối thoại riêng tư cho mọi người.',
+		'introParagraph1': 'Cryptocat là hệ thống tin nhắn nhanh để bạn dể dàng trao đổi thông tin với bạn bè. Các tin nhắn đều được mã hoá trước khi được gửi đi và được bảo vệ chặt chẽ, ngoài bạn và người nhận tin nhắn ra, không ai đọc được ngay cả chúng tôi.',
+		'introParagraph2': 'Cryptocat là chương trình miễn phí được thành lập theo dạng mở rộng. Quá trình phát triển của chúng tôi luôn được giám sát bởi một cộng đồng tình nguyện viên. <a href="https://project.crypto.cat" target="_blank">Hãy tìm hiểu thêm về Cryptocat Project</a>.',
+		'project': 'Dự Án',
+		'blog': 'Blog',
+		'source': 'Nguồn',
+		'supportedText': 'Cài đặt Cryptocat vào trình duyêt để truy cập nhanh chóng khi bạn cần dùng.',
+		'unsupportedText': 'Hiện thời Cryptocat chỉ xử dụng được qua trình duyệt web <a href="https://google.com/chrome" target="_blank">Google Chrome</a>, <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a> và <a href="http://www.apple.com/safari/" target="_blank">Safari</a>. Hãy đổi qua một trong những trình duyệt hàng đầu thế giới này hôm nay để xài Cryptocat.',
+		'getChrome': 'Tải Cryptocat về cho Google Chrome',
+		'getFirefox': 'Tải Cryptocat về cho Mozilla Firefox',
+		'getSafari': 'Tải Cryptocat về cho Safari',
+		'notSupported': 'Trình duyệt của bạn không được hỗ trợ'
+	}
+}
+
+language['zh-cn'] = {
+	'language': 'zh-cn',
 	'direction': 'ltr',
 	'font-family': 'Tahoma, "Microsoft Yahei","微软雅黑", Helvetica, Arial, sans-serif, STXihei, "华文细黑"',
 	'mainWindow': {
-		'introHeader': '为每个人的私人谈话',
-		'introParagraph1': 'Cryptocat是一個即時通訊平台，可以讓你輕鬆擁有朋友的私人談話，並會在你離開你的屏幕時對訊息進行加密，好讓防止任何第三者查看，包括我們。',
-		'introParagraph2': 'Cryptocat是建立在開放標準的免費軟件。我們的開發過程是由社區志願者和愛好者進行持續的檢測。了解更多 <a href="https://project.crypto.cat" target="_blank">Cryptocat的項目。</a>',
+		'introHeader': '属于每个人的私人对话。',
+		'introParagraph1': 'Cryptocat是一个即时通讯平台，可以让你轻松地与朋友拥有的私人对话。讯息在离开你的屏幕画面前进行加密及保护，好让防止任何第三者查看，包括我们。',
+		'introParagraph2': 'Cryptocat是建于开放规格上的免​​费软件。我们的开发过程是由公众志愿者和爱好者进行持续的检测。了解更多 <a href="https://project.crypto.cat" target="_blank">Cryptocat的项目。</a>',
 		'project': '项目',
 		'blog': '博客',
-		'source': '源',
+		'source': '源代码',
+		'supportedText': 'Cryptocat很容易安装在您的浏览器，以便快速访问。',
+		'unsupportedText': 'Cryptocat目前只适用于谷歌和<a href="https://google.com/chrome" target="_blank">Chrome</a> 和 <a href="http://getfirefox.com" target="_blank">浏览器Mozilla的火狐浏览器。</a> Cryptocat是目前世界领先的浏览器之一。',
+		'getChrome': '由谷歌浏览器下载Cryptocat',
+		'getFirefox': '由Mozilla Firefox浏览器下载Cryptocat',
+		'getSafari': '由Safari浏览器下载Cryptocat',
+		'notSupported': '您的浏览器并不支援。'
+	}
+}
+
+language['zh-hk'] = {
+	'language': 'zh-hk',
+	'direction': 'ltr',
+	'font-family': 'Tahoma, "Microsoft Yahei","微软雅黑", Helvetica, Arial, sans-serif, STXihei, "华文细黑"',
+	'mainWindow': {
+		'introHeader': '屬於每個人的私人對話。',
+		'introParagraph1': 'Cryptocat是一個即時通訊平台，可以讓你輕鬆地與朋友擁有的私人對話。訊息在離開你的屏幕畫面前進行加密及保護，好讓防止任何第三者查看，包括我們。',
+		'introParagraph2': 'Cryptocat是建於開放規格上的免費軟件。我們的開發過程是由公眾志願者和愛好者進行持續的檢測。了解更多 <a href="https://project.crypto.cat" target="_blank">Cryptocat的項目。</a>',
+		'project': '項目',
+		'blog': '博客',
+		'source': '源代碼',
 		'supportedText': 'Cryptocat很容易安裝在您的瀏覽器，以便快速訪問。',
-		'unsupportedText': 'Cryptocat目前只適用於谷歌<a href="https://google.com/chrome" target="_blank">Chrome</a> 和 <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a> 和 <a href="http://www.apple.com/safari/" target="_blank">Safari</a> 瀏覽器。Cryptocat是目前世界領先的瀏覽器之一。',
+		'unsupportedText': 'Cryptocat目前只適用於谷歌<a href="https://google.com/chrome" target="_blank">Chrome</a> 和 <a href="http://getfirefox.com" target="_blank">浏览器Mozilla的火狐浏览器。</a> 瀏覽器。Cryptocat是目前世界領先的瀏覽器之一。',
 		'getChrome': '由谷歌瀏覽器下載Cryptocat',
 		'getFirefox': '由Mozilla Firefox下載Cryptocat',
 		'getSafari': '由Safari下載Cryptocat',
@@ -423,10 +463,8 @@ language.zh = {
 	}
 }
 
-language['zh-tw'] = language.zh;
-language['zh-hk'] = language.zh;
-language['zh-cn'] = language.zh;
-language['zh-sg'] = language.zh;
+language['zh-tw'] = language['zh-hk'];
+language['zh-sg'] = language['zh-cn'];
 
 
 })();
