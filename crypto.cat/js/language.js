@@ -2,11 +2,6 @@
 (function(){
 
 var language = {};
-var defaultLanguage;
-
-Language.setDefault = function(lang) {
-	defaultLanguage = language[lang];
-}
 
 Language.set = function(lang) {
 	lang = language[lang];

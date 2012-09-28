@@ -1,8 +1,8 @@
 var language = window.navigator.userLanguage
 	|| window.navigator.language;
 try {
-		language = Language.set(language.toLowerCase());
-	}
+	language = Language.set(language.toLowerCase());
+}
 catch(err) {
 	language = Language.set('en');
 }
