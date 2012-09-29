@@ -7,8 +7,8 @@ Language.set = function(lang) {
 	lang = language[lang];
 	$('body').css('font-family', lang['font-family']);
 	$('html').attr('dir', lang['direction']);
-	$('#introHeader').html(lang['mainWindow']['introHeader']);
-	$('#introParagraph1').html(lang['mainWindow']['introParagraph1']);
+	$('#introHeader').text(lang['mainWindow']['introHeader']);
+	$('#introParagraph1').text(lang['mainWindow']['introParagraph1']);
 	$('#introParagraph2').html(lang['mainWindow']['introParagraph2']);
 	$('#project').html(lang['mainWindow']['project']);
 	$('#blog').html(lang['mainWindow']['blog']);
