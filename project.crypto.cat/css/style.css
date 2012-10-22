@@ -110,8 +110,23 @@ div.big {
 }
 
 div.big p {
-	width: 55%;
+	width: 60%;
 	font-size: 14px;
+}
+
+div.big #mediaQuote {
+	font-style: italic;
+	width: 600px;
+	height: 30px;
+	padding: 6px 8px;
+	border: 1px dashed #97CEEC;
+	box-shadow: 2px 2px #97CEEC;
+}
+
+div.big #mediaQuote p {
+	margin: 0;
+	width: 600px;
+	font-size: 12px;
 }
 
 div.column2 img {
@@ -200,12 +215,6 @@ div.footer p {
 	float: right;
 	margin-top: 0;
 	text-align: right;
-}
-
-div.footer img.press {
-	margin: 0 auto;
-	display: block;
-	float: none;
 }
 
 iframe {
