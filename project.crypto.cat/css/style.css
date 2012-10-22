@@ -251,10 +251,10 @@ iframe {
 	background-image: -ms-linear-gradient(bottom, rgb(139,208,245) 25%, rgb(182,226,250) 63%);
 }
 #downloadButton p {
-	margin: 0 0 0 10px;
+	margin: -5px 0 0 10px;
 	position: relative;
 	bottom: 101px;
-	width: 240px;
+	width: 230px;
 	left: 50px;
 	display: block;
 	font-size: 22px;
