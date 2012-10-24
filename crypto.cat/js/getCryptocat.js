@@ -67,3 +67,9 @@ $('#languages').change(function() {
 	getDownloadButton();
 });
 getDownloadButton();
+
+// Get language from URL anchor
+if (window.location.hash.length > 1) {
+	language = Language.set(window.location.hash.substring(1));
+	getDownloadButton();
+}
