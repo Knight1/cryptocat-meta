@@ -5,26 +5,45 @@
 }
 
 var mediaQuotes = [
-	'“Cryptocat has a simple, countercultural goal: people should be able to talk on the Internet without being subjected to surveillance.” - The New York Times',
-	'“Cryptocat is deceptively simple for a web app that can save lives, subvert governments and frustrate marketers.” - Wired',
-	'“The beauty of Cryptocat is its simplicity.” - PC World',
-	'“One of the best Google Chrome apps currently out there.” - Business Insider',
-	'“We’ve finally found a stylish and secure way to chat online that fits our hip/paranoid lifestyle: Cryptocat.” - Netted',
-	'“16th Annual Webby Awards Honoree, Social Media Category.” - Webby Awards',
-	'“Wall Street Journal Data Transparency Award for Outstanding Data Control Project.” - Wall Street Journal',
-	'“Cryptocat brings extra-secure communication to web chat, especially in places where conversations might be watched.” - Ars Technica',
-	'“Cryptocat may turn out to be the Web’s easiest way to communicate with strong encryption.” - Forbes',
-	'“Cryptocat creates an encrypted, disposable chatroom on any computer with a web browser.” - Lifehacker',
-	'“Cryptocat works inside a web browser and enables people to chat online via encrypted instant messaging.” - BBC News'
+	'“Cryptocat has a simple, countercultural goal: people should be able to talk on the Internet without being subjected to surveillance.”',
+	'“Cryptocat is deceptively simple for a web app that can save lives, subvert governments and frustrate marketers.”',
+	'“The beauty of Cryptocat is its simplicity.”',
+	'“One of the best Google Chrome apps currently out there.”',
+	'“We’ve finally found a stylish and secure way to chat online that fits our hip/paranoid lifestyle: Cryptocat.”',
+	'“16th Annual Webby Awards Honoree, Social Media Category.”',
+	'“Wall Street Journal Data Transparency Award for Outstanding Data Control Project.”',
+	'“Cryptocat brings extra-secure communication to web chat, especially in places where conversations might be watched.”',
+	'“Cryptocat may turn out to be the Web’s easiest way to communicate with strong encryption.”',
+	'“Cryptocat creates an encrypted, disposable chatroom on any computer with a web browser.”',
+	'“Cryptocat works inside a web browser and enables people to chat online via encrypted instant messaging.”'
 ];
+var mediaSources = [
+	'The New York Times',
+	'Wired',
+	'PC World',
+	'Business Insider',
+	'Netted',
+	'Webby Awards',
+	'Wall Street Journal',
+	'Ars Technica',
+	'Forbes',
+	'Lifehacker',
+	'BBC News'
+];
+
 currentQuote = 0;
 function switchQuote() {
 	if (currentQuote >= mediaQuotes.length) {
 		currentQuote = 0;
 	}
-	$('#mediaQuote p').fadeOut('slow', function() {
-		$(this).text(mediaQuotes[currentQuote]);
+	$('#mediaQuote').fadeOut('slow', function() {
+		$(this).text(mediaQuotes[currentQuote])
+			.append(' — ');
+	});
+	$('#mediaSource').fadeOut('slow', function() {
+		$(this).text(mediaSources[currentQuote]);
 		currentQuote++;
+		$('#mediaQuote').fadeIn('slow');
 		$(this).fadeIn('slow');
 	});
 }
@@ -81,5 +100,5 @@ function getDownloadButton() {
 }
 
 getDownloadButton();
-setInterval('switchQuote()', 8000);
+setInterval('switchQuote()', 7000);
 switchQuote();

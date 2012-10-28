@@ -114,7 +114,7 @@ div.big p {
 	font-size: 14px;
 }
 
-div.big #mediaQuote {
+div.big #media {
 	font-style: italic;
 	width: 600px;
 	height: 30px;
@@ -123,10 +123,16 @@ div.big #mediaQuote {
 	box-shadow: 2px 2px #97CEEC;
 }
 
-div.big #mediaQuote p {
+div.big #mediaQuote {
 	margin: 0;
 	width: 600px;
 	font-size: 12px;
+}
+
+div.big #mediaSource {
+	font-style: normal;
+	font-weight: bold;
+	color: #97CEEC;
 }
 
 div.column2 img {
