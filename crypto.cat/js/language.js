@@ -3,8 +3,22 @@
 
 var language = {};
 
+// Handle aliases
+function handleAliases(locale) {
+	if (locale === ('zh-hk' || 'zh-tw')) {
+		return 'zh-hk';
+	}
+	else if (locale === ('zh-cn' || 'zh-sg')) {
+		return 'zh-cn';
+	}
+	else if (locale.match('-')) {
+		return locale.match(/[a-z]+/)[0];
+	}
+	return locale;
+}
+
 Language.set = function(lang) {
-	lang = language[lang];
+	lang = language[handleAliases(lang)];
 	$('body').css('font-family', lang['font-family']);
 	$('html').attr('dir', lang['direction']);
 	$('#introHeader').text(lang['mainWindow']['introHeader']);
@@ -477,16 +491,5 @@ language['zh-hk'] = {
 		'notSupported': '您的瀏覽器並不支援。'
 	}
 }
-
-//Language Aliases
-language['de-de'] = language['de'];
-language['es-es'] = language['es'];
-language['es-mx'] = language['es'];
-language['es-ar'] = language['es'];
-language['pt-pt'] = language['pt'];
-language['pt-br'] = language['pt'];
-language['sv-se'] = language['sv'];
-language['zh-tw'] = language['zh-hk'];
-language['zh-sg'] = language['zh-cn'];
 
 })();
