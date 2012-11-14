@@ -1,4 +1,4 @@
-﻿var Language = function() {};
+var Language = function() {};
 (function(){
 
 var language = {};
@@ -432,6 +432,46 @@ language.vi = {
 	}
 }
 
+language.tr = {
+	'language': 'tr',
+	'direction': 'ltr',
+	'font-family': 'Helvetica, Arial, Verdana',
+	'mainWindow': {
+		'introHeader': 'Herkes için Güvenli İletişim.',
+		'introParagraph1': 'Cryptocat, arkadaşlarınızla kolayca özel sohbetler yapabileceğiniz biranlık mesajlaşma platformudur. Mesajlar ekranınızdan gönderilmeden önce şifrelenir ve böylece herhangi bir üçüncü şahıs tarafından hatta bizim tarafımızdan bile görülmesi engellenir.',
+		'introParagraph2': 'Cryptocat açık kaynak standartları üzerine kurulu ücretsiz bir yazılımdır. Bizim geliştirme sürecimiz, gönüllü ve heyecanlı bir topluluk tarafından sürekli denenme altındadır. <a href="https://project.crypto.cat" target="_blank">Cryptocat Projesi hakkında daha fazla bilgi edinin</a>.',
+		'project': 'Proje',
+		'blog': 'Blog',
+		'source': 'Kaynak',
+		'supportedText': 'İhtiyacınız olduğunda Cryptocat hızlı erişim için tarayıcınızda kolayca yüklenir.',
+		'unsupportedText': 'Cryptocat şu anda sadece <a href="https://google.com/chrome" target="_blank">Google Chrome</a>, <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a> ve <a href="http://www.apple.com/safari/" target="_blank">Safari</a> ile kullanılabilir.',
+		'getChrome': 'Google Chrome için Cryptocat edinin',
+		'getFirefox': 'Google Chrome için Cryptocat edinin',
+		'getSafari': 'Safari için Cryptocat edinin',
+		'notSupported': 'Tarayıcınız desteklenmiyor.'
+	}
+}
+
+language.no = {
+	'language': 'vi',
+	'direction': 'ltr',
+	'font-family': 'Helvetica, Arial, Verdana',
+	'mainWindow': {
+		'introHeader': 'Private samtaler for alle.',
+		'introParagraph1': 'Cryptocat er en direktemeldings-plattform som enkelt lar deg ha private samtaler med venner. Samtalene krypteres før de forlater skjermen din og er beskyttet mot å bli sett av en tredjepart, til og med oss.',
+		'introParagraph2': 'Cryptocat er gratis programvare bygd på åpne standarder. Utviklingsprosessen undersøkes kontinuerlig av et samfunn av frivillige og entusiaster. <a href="https://project.crypto.cat" target="_blank">Lær mer om Cryptocatprosjektet</a>.',
+		'project': 'Prosjekt',
+		'blog': 'Blogg',
+		'source': 'Kildekode',
+		'supportedText': 'Cryptocat er lett å installere i nettleseren din for rask tilgang uansett når du måtte trenge det.',
+		'unsupportedText': 'Cryptocat er foreløpig bare tilgjengelig til <a href="https://google.com/chrome" target="_blank">Google Chrome</a>, <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a> og <a href="http://www.apple.com/safari/" target="_blank">Safari</a>. Bytt til en av disse nettleserne i dag for å bruke Cryptocat.',
+		'getChrome': 'Få Cryptocat til Google Chrome',
+		'getFirefox': 'Få Cryptocat til Mozilla Firefox',
+		'getSafari': 'Få Cryptocat til Safari',
+		'notSupported': 'Nettleseren din støttes ikke.'
+	}
+}
+
 language.bo = {
 	'language': 'bo',
 	'direction': 'ltr',
@@ -469,6 +509,26 @@ language['zh-cn'] = {
 		'getFirefox': '由Mozilla Firefox浏览器下载Cryptocat',
 		'getSafari': '由Safari浏览器下载Cryptocat',
 		'notSupported': '您的浏览器并不支援。'
+	}
+}
+
+language.ur = {
+	'language': 'ur',
+	'direction': 'rtl',
+	'font-family': 'Tahoma, DejaVu, Helvetica, Arial, Verdana',
+	'mainWindow': {
+		'introHeader': 'نجی گفتگو، سب کے لئے',
+		'introParagraph1': ' کرپٹو کاٹ ایک ایسا فوری پیغام رساں یعنی انسٹینٹ میسنجر سافٹ ویئر پروگرام  ہے جس کے ذریے آپ آسانی سے اپنے احباب کے ساتھ گفتگو کر سکتے ہیں. آپ کے پیغام آپ کی سکرین سے شآیہ ہونے سے قبل خفیہ کر دیا جاتا ہے، کسی بھی تیسرے رکن سے، حتیٰ کہ ہم سے بھی ',
+		'introParagraph2': ' کرپٹو کاٹ مفت سافٹ ویئر ہے جو کہ آشکار معیار پر وضح  کیا گیا ہے. ہماری سافٹ ویئر کی ارتقا ایک پرشوق  اور رضاکرانہ  گروہ کے مسلسل جرح کے زیر نگرانی ہوتے ہے. کرپٹو پروجیکٹ کے بارے میں مزید جانیے ',
+		'project': 'منصوبہ ',
+		'blog': 'بلاگ ',
+		'source': 'ذریع ',
+		'supportedText': 'کرپٹو کاٹ آپ کے براؤزر میں آسانی سے نصب ہو جاتی ہے، تاکہ آپ کو اس کی کہیں بھی فوری رسائی ہو',
+		'unsupportedText': 'رپٹو کاٹ اس وقت صرف گوگل کروم اور موزیلا فائر فاکس کے لئے دستیاب ہے. دنیا کے پیش روا براؤزر چنیے تاکہ آپ کرپٹو کاٹ استعمال کر سکیں',
+		'getChrome': 'گوگل کروم کے لئے کرپٹو کاٹ حاصل کیجیے',
+		'getFirefox': 'إکرپٹو کاٹ موزیلا فائر فاکس کے لئے حاصل کیجیے',
+		'getSafari': 'کے لئے کرپٹو کاٹ حاصل کیجیے Safari',
+		'notSupported': 'آپ کے براؤزر میں ہم نہیں چلا سکتے'
 	}
 }
 
