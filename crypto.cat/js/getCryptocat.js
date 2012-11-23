@@ -1,5 +1,6 @@
-var language = window.navigator.userLanguage
-	|| window.navigator.language;
+$(window).load(function() {
+
+var language = window.navigator.userLanguage || window.navigator.language;
 try {
 	language = Language.set(language.toLowerCase());
 }
@@ -73,3 +74,5 @@ if (window.location.hash.length > 1) {
 	language = Language.set(window.location.hash.substring(1));
 	getDownloadButton();
 }
+
+});
