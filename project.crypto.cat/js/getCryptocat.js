@@ -8,6 +8,7 @@ var downloadLink = {
 
 var mediaQuotes = [
 	'“Cryptocat has a simple, countercultural goal: people should be able to talk on the Internet without being subjected to surveillance.”',
+	'"An essential privacy tool."',
 	'“The beauty of Cryptocat is its simplicity.”',
 	'“One of the best Google Chrome apps currently out there.”',
 	'“We’ve finally found a stylish and secure way to chat online that fits our hip/paranoid lifestyle: Cryptocat.”',
@@ -20,6 +21,7 @@ var mediaQuotes = [
 ];
 var mediaSources = [
 	'The New York Times',
+	"Forbes",
 	'PC World',
 	'Business Insider',
 	'Netted',
