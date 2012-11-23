@@ -116,10 +116,13 @@ div.big p {
 
 div.big #media {
 	font-style: italic;
-	width: 600px;
+	width: 57%;
 	height: 30px;
-	padding: 6px 8px;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 7px 9px;
 	border: 1px dashed #97CEEC;
+	border-right: none;
+	border-bottom: none;
 	box-shadow: 2px 2px #97CEEC;
 }
 
@@ -191,7 +194,8 @@ div.user img {
 	border: 2px solid #FFF;
 	border-bottom: 18px solid #FFF;
 	width: 90px;
-	box-shadow: 1px 1px #000;
+	box-shadow: 3px 3px 3px #000;
+	margin-top: 0;
 }
 
 div.footer {
