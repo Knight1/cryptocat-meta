@@ -1,4 +1,6 @@
-﻿var downloadLink = {
+$(window).load(function() {
+
+var downloadLink = {
 	'chrome': 'https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij',
 	'firefox': 'https://addons.mozilla.org/en-US/firefox/addon/cryptocat/',
 	'safari': 'https://crypto.cat/get/cryptocat.safariextz'
@@ -6,7 +8,6 @@
 
 var mediaQuotes = [
 	'“Cryptocat has a simple, countercultural goal: people should be able to talk on the Internet without being subjected to surveillance.”',
-	'“Cryptocat is deceptively simple for a web app that can save lives, subvert governments and frustrate marketers.”',
 	'“The beauty of Cryptocat is its simplicity.”',
 	'“One of the best Google Chrome apps currently out there.”',
 	'“We’ve finally found a stylish and secure way to chat online that fits our hip/paranoid lifestyle: Cryptocat.”',
@@ -19,7 +20,6 @@ var mediaQuotes = [
 ];
 var mediaSources = [
 	'The New York Times',
-	'Wired',
 	'PC World',
 	'Business Insider',
 	'Netted',
@@ -100,5 +100,7 @@ function getDownloadButton() {
 }
 
 getDownloadButton();
-setInterval('switchQuote()', 7000);
+setInterval(switchQuote, 7000);
 switchQuote();
+
+});
