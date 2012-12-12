@@ -292,6 +292,126 @@ language.el = {
 	}
 }
 
+language.eo = {
+	'language': 'eo',
+	'direction': 'ltr',
+	'font-family': 'Helvetica, Arial, Verdana',
+	'mainWindow': {
+		'introHeader': 'Privata Konversacioj por Ĉiuj.',
+		'introParagraph1': 'Cryptocat estas tuja mesaĝado platformo kiu permesas facile havi privatajn konversaciojn kun amikoj. Mesaĝoj estas ĉifrita antaŭ lasi vian ekranon kaj estas protektitaj de esti vidita de neniu tria partio, eĉ de ni.',
+		'introParagraph2': 'Cryptocat estas libera programaro konstruita sur malfermita normoj. Nia procezo de disvolviĝo estas sub kontinua ekzameno de komunumo de volontuloj kaj entuziasmuloj. <a href="https://project.crypto.cat" target="_blank">Lernu pli pri la Cryptocat Project</a>.',
+		'project': 'Projekto',
+		'blog': 'Blogo',
+		'source': 'Fontkodojn',
+		'supportedText': 'Cryptocat facile instalas en via.',
+		'unsupportedText': 'Cryptocat estas nuntempe nur estas disponebla por <a href="https://google.com/chrome" target="_blank">Google Chrome</a>, <a href="http://getfirefox.com" target="_blank">Mozilla Firefox</a> kaj <a href="http://www.apple.com/safari/" target="_blank">Safari</a>. Sangu al unu el la mondaj ĉefaj kroziloj hodiaŭ uzi Cryptocat.',
+		'getChrome': 'Akiru Cryptocat por Google Chrome',
+		'getFirefox': 'Akiru Cryptocat por Mozilla Firefox',
+		'getSafari': 'Akiru Cryptocat por Safari',
+		'notSupported': 'Via foliumilo estas ne subtenata.'
+	}
+}
+
+language.et = {
+	'language': 'et',
+	'direction': 'ltr',
+	'font-family': 'Helvetica, Arial, Verdana',
+	'mainWindow': {
+		'introHeader': 'Privaatvestlus kõigile.',
+		'introParagraph1': 'Cryptocat on kiirsõnumite platvorm mis laseb sul kergelt sõpradega privaatseid vestlusi pidada. Sõnumid on krüpteeritud enne su ekraanilt lahkumist ning on kaitstud kolmandate isikute pilkude, isegi meie omade eest.',
+		'introParagraph2': 'Cryptocat on tasuta tarkvara mis on ehitatud avatud standarditele. Meie arendusprotsess on vabatahtlike ja entusiastide pideva uurimise all. <a href="https://project.crypto.cat" target="_blank">Õpi veel Cryptocat\'i Projekti kohta</a>.',
+		'project': 'Projekt',
+		'blog': 'Blogi',
+		'source': 'Lähtekood',
+		'supportedText': 'Cryptocat installib ennast kergelt ennast sinu brauserisse, et sul oleks kiire ligipääs millaliganes sa seda vajad.',
+		'unsupportedText': 'Cryptocat on hetkel saadaval vaid <a href="https://google.com/chrome" target="_blank">Google Chrome\'ile</a>, <a href="http://getfirefox.com" target="_blank">Mozilla Firefox\'ile</a> ja <a href="http://www.apple.com/safari/" target="_blank">Safari\'ile</a>. Vaheta täna ühele maailma juhtivale brauserile, et kasutada Cryptocat\'i.',
+		'getChrome': 'Hangi Cryptocat Google Chrome\'ile',
+		'getFirefox': 'Hangi Cryptocat Mozilla Firefox\'ile',
+		'getSafari': 'Hangi Cryptocat Safari\'ile',
+		'notSupported': 'Sinu Brauser Ei Ole Toetatud'
+	}
+}
+
+language.ja = {
+	'language': 'ja',
+	'direction': 'ltr',
+	'font-family': '"Microsoft Yahei", "微软雅黑", Tahoma, Helvetica, Arial, sans-serif, STXihei, "华文细黑"',
+	'mainWindow': {
+		'introHeader': 'みんなにプライベートな会話',
+		'introParagraph1': 'Cryptocatとは友達と簡単にプライベートな会話をさせるインスタントメッセージのプラットフォームです。全てのメッセージは送信の前に暗号化されて、第三者（我々でも）の閲覧から守られています。',
+		'introParagraph2': 'Cryptocatはオープンスタンダードに準拠するフリーソフトウェアです。我々の開発プロセスはボランティアや熱狂社のコミュニティーに連続観察されています。<a href="https://project.crypto.cat" target="_blank">Cryptocatプロジェクトの詳細はこちらです</a>。',
+		'project': 'プロジェクト',
+		'blog': 'ブログ',
+		'source': 'ソース',
+		'supportedText': 'Cryptocatはブラウザーに迅速にインストールされます。必要なときにすばやくアクセスすることができます。',
+		'unsupportedText': 'Cryptocatは現在提供しているのは、Google ChromeとMozilla Firefox と Safari のみです。Cryptocatを使うようになるため、世界有数のブラウザーに乗り越えてください。',
+		'getChrome': 'Google Chrome用Cryptocatを得る',
+		'getFirefox': 'Mozilla Firefox用Cryptocatを得る',
+		'getSafari': 'Safari用Cryptocatを得る',
+		'notSupported': 'このブラウザーはサポートされていません'
+	}
+}
+
+language.ko = {
+	'language': 'ko',
+	'direction': 'ltr',
+	'font-family': '"Microsoft Yahei", "微软雅黑", Tahoma, Helvetica, Arial, sans-serif, STXihei, "华文细黑"',
+	'mainWindow': {
+		'introHeader': '모든 사람을위한 개인 대화.',
+		'introParagraph1': 'Cryptocat는 쉽게 친구와 사적인 대화를 할 수있는 인스턴트 메시징 플랫폼입니다. 메시지가 화면 이동하기 전에 암호화됩니다, 심지어로부터 제 3 자에 의해 조회되는 보호됩니다.',
+		'introParagraph2': 'Cryptocat는 개방형 표준을 기반으로 무료 소프트웨어입니다. 우리의 개발 과정은 자원 봉사자와 애호가의 커뮤니티에 의해 지속적으로 심사 중입니다. <a href="https://project.crypto.cat" target="_blank">Cryptocat 프로젝트에 대한 자세한 내용은 다음 페이지를 참조하십시오</a>.',
+		'project': '계획',
+		'blog': '블로그',
+		'source': '출처',
+		'supportedText': '당신이 그것을 필요로 할 때 Cryptocat 쉽게 빠르게 액세스 할 수 귀하의 브라우저에 설치합니다.',
+		'unsupportedText': 'Cryptocat는 현재 Google 크롬 및 모질라 파이어 폭스에서만 사용할 수 있습니다. Cryptocat을 사용하여 오늘날 세계 최고의 브라우저 중 하나로 전환합니다.',
+		'getChrome': 'Google 크롬에 대한 Cryptocat을',
+		'getFirefox': 'Mozilla Firefox에서 Cryptocat을',
+		'getSafari': 'Safari에서 Cryptocat을',
+		'notSupported': '귀하의 브라우저는 지원되지 않습니다.'
+	}
+}
+
+language.lv = {
+	'language': 'lv',
+	'direction': 'ltr',
+	'font-family': 'Helvetica, Arial, Verdana',
+	'mainWindow': {
+		'introHeader': 'Privātas sarunas ikvienam.',
+		'introParagraph1': 'Cryptocat ir ziņojumu tūlītējas apmaiņas platforma, kas ļauj veikt privātas sarunas ar draugiem. Ziņojumi tiek šifrēti pirms tie pamet ekrānu un ir pasargāti no tā, ka kāda trešā puse, pat mēs, varētu tos nolasīt.',
+		'introParagraph2': 'Cryptocat ir brīvā programmatūra, kas būvēta atbilstoši atvērtajiem standartiem. Mūsu izstrādes procesu pastāvīgi uzrauga entuziastu un brīvprātīgo sabiedrība. <a href="https://project.crypto.cat" target="_blank">Uzzini vairāk par Cryptocat projektu</a>.',
+		'project': 'Projekts',
+		'blog': 'Blogs',
+		'source': 'Avots',
+		'supportedText': 'Cryptocat viegli instalējas pārlūkā, lai būtu ātri pieejams ikreiz, kad vajadzīgs.',
+		'unsupportedText': 'Cryptocat pašlaik pieejams tikai Google Chrome un Mozilla Firefox un Safari pārlūkos. Pārej jau šodien uz kādu no pasaules vadošajiem pārlūkiem, lai lietotu Cryptocat.',
+		'getChrome': 'Iegūsti Cryptocat Google Chrome pārlūkam',
+		'getFirefox': 'Iegūsti Cryptocat Mozilla Firefox pārlūkam',
+		'getSafari': 'Iegūsti Cryptocat Safari pārlūkam',
+		'notSupported': 'Tavs pārlūks nav atbalstīts.'
+	}
+}
+
+language.km = {
+	'language': 'km',
+	'direction': 'ltr',
+	'font-family': 'Microsoft Himalaya, Jomolhari, Helvetica, Arial, Verdana',
+	'mainWindow': {
+		'introHeader': 'ការ​សន្ទនា​ឯកជន​សម្រាប់​ទាំង​អស់​គ្នា',
+		'introParagraph1': 'Cryptocat ជា​កម្មវិធី​សរសេរ​សារ ដែល​អនុញ្ញាត​ឲ្យ​អ្នក​សន្ទនា​ជា​លក្ខណ​ឯកជន​និង​មិត្តភ័ក្ដិ។ សារ​ត្រូវ​បាន​បម្លែង​ជា​លេខ​សម្ងាត់​មុន​នឹង​ផ្ញើ​ចេញ​ពី​អេក្រង់​របស់​អ្នក ដើម្បី​ការពារ​មិន​ឲ្យ​ភាគី​ទី៣​មើល​ឃើញ សូម្បី​យើង​ខ្ញុំ​ក៏​មិន​អាច​មើល​ឃើញ​ដែរ។',
+		'introParagraph2': 'Cryptocat ជា​កម្មវិធី​កុំព្យូទ័រ ត្រូវ​បាន​បង្កើត​លើ​ស្តង់ដារ​បើក​ទូលាយ ហើយ​ចែក​ជូន​ដោយ​ឥត​គិត​ថ្លៃ។ សហគមន៍​អ្នក​ស្ម័គ្រ​ចិត្ត និង​អ្នក​មាន​ចំណាប់​អារម្មណ៍​កំពុង​តែ​ធ្វើ​ការ​ពិនិត្យ និង​សាកល្បង បង្កើត​ឲ្យ​មាន​ការ​អភិវឌ្ឍ​ថ្មីៗ​នេះ។ ស្វែង​យល់​បន្ថែម​អំពី​គម្រោង <a href="https://project.crypto.cat" target="_blank">Cryptocat</a>។',
+		'project': 'គម្រោង',
+		'blog': 'ប្លុក',
+		'source': 'ប្រភព',
+		'supportedText': 'ដំឡើង Cryptocat នៅ​លើ​កម្មវិធី​រុករក គឺ​ងាយ​ស្រួល​ណាស់ ហើយ​អ្នក​បើក​កម្មវិធី​នេះ​បាន​យ៉ាង​លឿន​នៅ​គ្រប់​ទី​កន្លែង​ទៀត​ផង។',
+		'unsupportedText': 'Cryptocat បច្ចុប្បន្ន ដំឡើង​បាន​តែ​ជា​មួយ Google Chrome និង Mozilla Firefox និង Safari ។ សូម​ប្ដូរ​ទៅ​កម្មវិធី​រុករក​ដ៏​ល្បីល្បាញ​ជាង​គេ​ទាំង​ទ្វេ​នេះ ដើម្បី​ប្រើប្រាស់ Cryptocat បាន។',
+		'getChrome': 'ទទួល​យក Cryptocat សម្រាប់ Google Chrome',
+		'getFirefox': 'ទទួល​យក Cryptocat សម្រាប់ Mozilla Firefox',
+		'getSafari': 'ទទួល​យក Cryptocat សម្រាប់ Safari',
+		'notSupported': 'កម្មវិធី​រុករក​របស់​អ្នក​មិន​គាំទ្រ។'
+	}
+}
+
 language.nl = {
 	'language': 'nl',
 	'direction': 'ltr',
