@@ -6,7 +6,7 @@
    <array>
      <dict>
        <key>CFBundleIdentifier</key>
-       <string>com.cryptocat.safari.cryptocat</string>
+       <string>com.cryptocat.cryptocat</string>
        <key>Developer Identifier</key>
        <string>HC689Z8JM4</string>
        <key>CFBundleVersion</key>
