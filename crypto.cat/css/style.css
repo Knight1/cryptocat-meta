@@ -62,7 +62,7 @@ div#map {
 	z-index: 10;
 	border-bottom: 6px solid #97CEEC;
 	background: url('../img/map.png');
-	background-position: 100% 70%;
+	background-position: 100% 50%;
 }
 
 div#map div#nav {
