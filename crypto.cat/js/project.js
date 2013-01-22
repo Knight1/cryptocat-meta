@@ -69,15 +69,15 @@ function detectBrowser() {
 }
 
 function scrollToAnchor(aid){
-	var aTag = $("a[name='"+ aid +"']");
-	$('body').animate({scrollTop: aTag.offset().top}, 1200);
+	var aTag = $('#' + aid);
+	$('body').animate({scrollTop: aTag.offset().top}, 800);
 }
 
 $('#map').scroll(function(e) {
 	e.preventDefault();
 })
 
-$('#navLinks a').click(function(e) {
+$('#cryptocatLink').click(function(e) {
 	e.preventDefault();
 	var aid = $(this).attr('href').substring(1);
 	scrollToAnchor(aid);
@@ -90,7 +90,7 @@ $('#map').animate({
 
 $('#warningLink').click(function(e) {
 	e.preventDefault();
-	$('#warnings').slideDown(1000, function() {
+	$('#warningsBox').slideDown(500, function() {
 		window.setTimeout(function() {
 			scrollToAnchor('warnings');
 		});

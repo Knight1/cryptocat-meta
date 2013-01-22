@@ -45,9 +45,8 @@ ul, ol, li {
 	list-style-type: square;
 }
 
-img {
-	image-rendering: optimizeQuality;
-	image-rendering: -webkit-optimize-contrast;
+li {
+	margin-top: 10px;
 }
 
 a:hover {
@@ -63,8 +62,7 @@ div#map {
 	z-index: 10;
 	border-bottom: 6px solid #97CEEC;
 	background: url('../img/map.png');
-	background-position-x: 100%;
-	background-position-y: 70%;
+	background-position: 100% 70%;
 }
 
 div#map div#nav {
@@ -180,7 +178,7 @@ hr {
 	margin-bottom: 20px;
 }
 
-a#cryptocatAnchor {
+a.cryptocatAnchor {
 	position: relative;
 	bottom: 50px;
 }
@@ -215,7 +213,7 @@ div#body strong {
 	color: #999;
 }
 
-div#body div#warnings {
+div#body div#warningsBox {
 	display: none;
 	background: rgba(255, 255, 255, 0.1);
 	padding: 10px;
