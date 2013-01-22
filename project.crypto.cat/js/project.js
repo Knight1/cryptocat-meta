@@ -1,9 +1,28 @@
 $(window).load(function() {
+	
+var browser = detectBrowser();
 
 var downloadLink = {
-	'chrome': 'https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij',
-	'firefox': 'https://addons.mozilla.org/en-US/firefox/addon/cryptocat/',
-	'safari': 'https://crypto.cat/get/cryptocat.safariextz'
+	'chrome': {
+		'text': 'Download Cryptocat for Chrome',
+		'link': 'https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij'
+	},
+	'firefox': {
+		'text': 'Download Cryptocat for Firefox',
+		'link': 'https://addons.mozilla.org/en-US/firefox/addon/cryptocat/'
+	},
+	'safari': {
+		'text': 'Download Cryptocat for Safari',
+		'link': 'https://crypto.cat/get/cryptocat.safariextz'
+	},
+	'opera': {
+		'text': 'Unfortunately, Cryptocat is only available for Chrome, Firefox and Safari.',
+		'link': '#'
+	},
+	'internetExplorer': {
+		'text': 'Unfortunately, Cryptocat is only available for Chrome, Firefox and Safari.',
+		'link': '#'
+	}
 }
 
 var mediaQuotes = [
@@ -33,11 +52,40 @@ var mediaSources = [
 	'BBC News'
 ];
 
-mapbox.auto('map', 'kaepora.map-mf3ru1ma', function(map) {
-	map.zoom(2, false);
-	map.center({ lat: 25, lon: 150 });
-	map.ease.location({ lat: 35, lon: 10 }).zoom(2, false).optimal(0.005);
+function detectBrowser() {
+	if (navigator.userAgent.match('Chrome')) {
+		return 'chrome';
+	}
+	if (navigator.userAgent.match('Firefox')) {
+		return 'firefox';
+	}
+	if (navigator.userAgent.match('Opera')) {
+		return 'opera';
+	}
+	if (navigator.userAgent.match('MSIE')) {
+		return 'internetExplorer';
+	}
+	return 'safari';
+}
+
+function scrollToAnchor(aid){
+	var aTag = $("a[name='"+ aid +"']");
+	$('body').animate({scrollTop: aTag.offset().top}, 1000);
+}
+
+$('#navLinks a').click(function(e) {
+	e.preventDefault();
+	var aid = $(this).attr('href').substring(1);
+	scrollToAnchor(aid);
 });
 
+mapbox.auto('map', 'kaepora.map-mf3ru1ma', function(map) {
+	map.zoom(2.5, false);
+	map.center({ lat: 25, lon: 150 });
+	map.ease.location({ lat: 35, lon: 10 }).zoom(2.5, false).optimal(0.002);
+});
+
+$('.downloadLink').text(downloadLink[browser]['text']);
+$('.downloadLink').attr('href', downloadLink[browser]['link']);
 
 });
