@@ -36,7 +36,7 @@ var mediaSources = [
 mapbox.auto('map', 'kaepora.map-mf3ru1ma', function(map) {
 	map.zoom(2, false);
 	map.center({ lat: 25, lon: 150 });
-	map.ease.location({ lat: 30, lon: 10 }).zoom(2, false).optimal(0.005);
+	map.ease.location({ lat: 35, lon: 10 }).zoom(2, false).optimal(0.005);
 });
 
 

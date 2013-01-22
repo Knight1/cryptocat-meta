@@ -10,6 +10,12 @@
 	font-weight: 700;
 	src: local('Monda Bold'), local('Monda-Bold'), url('MondaBold.woff') format('woff');
 }
+@font-face {
+	font-family: 'Picons';
+	font-style: normal;
+	font-weight: 200;
+	src: url('Picons.woff') format('woff');
+}
 
 body {
 	font-family: Helvetica, Arial, Verdana;
@@ -27,6 +33,14 @@ a {
 	font-weight: bold;
 }
 
+h1 {
+	font-weight: 100;
+	font-size: 32px;
+	font-family: 'Monda', sans-serif;
+	color: #97CEEC;
+	line-height: 1.4em;
+}
+
 a:hover {
 	text-decoration: underline;
 }
@@ -41,7 +55,6 @@ div#top div#nav {
 	padding: 8px 0 12px 0;
 	height: 14px;
 	background: rgba(173, 219, 239, 0.95);
-	text-align: right;
 	font-size: 16px;
 	box-shadow: 0px 0px 20px #222;
 	position: absolute;
@@ -49,8 +62,15 @@ div#top div#nav {
 	top: 0;
 }
 
+div#top div#nav img#cryptocat {
+	float: left;
+	margin-left: 25px;
+}
+
 div#top div#navLinks {
-	margin-right: 60px;
+	text-align: right;
+	position: fixed;
+	right: 20px;
 }
 
 div#top div#nav a {
@@ -63,13 +83,20 @@ div#top div#nav a {
 div#top div#header {
 	background: rgba(0, 0, 0, 0.9);
 	padding: 10px 0;
-	margin: 80px 0 0 0;
+	margin: 80px 0 125px 0;
 	height: 200px;
 	width: 100%;
 	min-width: 900px;
 	position: relative;
 	z-index: 2;
 	box-shadow: 3px 3px 25px #000;
+}
+
+div#top div#header a {
+	display: block;
+	margin-top: 15px;
+	font-size: 22px;
+	text-shadow: 0 0 25px #97CEEC;
 }
 
 div#top img#logo {
@@ -80,17 +107,11 @@ div#top img#logo {
 }
 
 div#top h1 {
-	font-weight: 100;
-	font-size: 36px;
-	font-family: 'Monda', sans-serif;
-	color: #97CEEC;
 	display: inline;
 	margin: 0 0 0 40px;
-	line-height: 1.4em;
 	position: relative;
 	top: 20px;
-	white-space: nowrap;
-	text-shadow: 0 0 20px #333;
+	font-size: 36px;
 }
 
 div#top div#header p {
@@ -112,4 +133,51 @@ div#top div#header p {
 	z-index: 0;
 	opacity: 1;
 	border-bottom: 6px solid #97CEEC;
+}
+
+#arrow {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 55px 55px 0 55px;
+	margin: 0 auto;
+	border-color: #97CEEC transparent transparent transparent;
+}
+
+div#body {
+	padding: 10px;
+	margin: 0 auto;
+	width: 700px;
+}
+
+div#body h1 {
+	margin: 5px 0 20px 0;
+	text-align: center;
+}
+
+div#body p {
+	margin: 20px auto 30px auto;
+	font-size: 16px;
+	font-family: 'Monda';
+	line-height: 1.4em;
+}
+
+div#body p.picon {
+	font-size: 80px;
+	font-family: 'Picons';
+	float: left;
+	margin-right: 20px;
+	line-height: 0.3em;
+}
+
+div#body strong {
+	color: #97CEEC;
+}
+
+div#footer {
+	width: 100%;
+	height: 10px;
+	padding: 10px 0;
+	background: rgba(173, 219, 239, 0.95);
+	margin-top: 50px;
 }
