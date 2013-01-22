@@ -70,8 +70,12 @@ function detectBrowser() {
 
 function scrollToAnchor(aid){
 	var aTag = $("a[name='"+ aid +"']");
-	$('body').animate({scrollTop: aTag.offset().top}, 1000);
+	$('body').animate({scrollTop: aTag.offset().top}, 1200);
 }
+
+$('#map').scroll(function(e) {
+	e.preventDefault();
+})
 
 $('#navLinks a').click(function(e) {
 	e.preventDefault();
@@ -79,11 +83,20 @@ $('#navLinks a').click(function(e) {
 	scrollToAnchor(aid);
 });
 
-mapbox.auto('map', 'kaepora.map-mf3ru1ma', function(map) {
-	map.zoom(2.5, false);
-	map.center({ lat: 25, lon: 150 });
-	map.ease.location({ lat: 35, lon: 10 }).zoom(2.5, false).optimal(0.002);
+$('#map').animate({
+	'background-position-x': '0%',
+	'background-position-y': '50%'
+}, 60000, 'linear');
+
+$('#warningLink').click(function(e) {
+	e.preventDefault();
+	$('#warnings').slideDown(1000, function() {
+		window.setTimeout(function() {
+			scrollToAnchor('warnings');
+		});
+	});
 });
+
 
 $('.downloadLink').text(downloadLink[browser]['text']);
 $('.downloadLink').attr('href', downloadLink[browser]['link']);

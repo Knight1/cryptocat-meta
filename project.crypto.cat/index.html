@@ -8,20 +8,18 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="icon" type="image/gif" href="img/favicon.gif" />
 	<script type="application/javascript" src="js/jquery.js"></script>
-	<script type="application/javascript" src="js/mapbox.js"></script>
 	<script type="application/javascript" src="js/project.js"></script>
 </head>
 <body>
-	<div id="top">
+	<div id="map">
 		<div id="nav">
 			<img src="img/cryptocat.png" alt="Cryptocat" id="cryptocatLogo" />
 			<div id="navLinks">
 				<a href="#cryptocat">Cryptocat</a>
-				<a href="#documentation">Documentation</a>
-				<a href="https://blog.crypto.cat/">Blog</a>
+				<a href="https://github.com/cryptocat/cryptocat/wiki/" target="_blank">Documentation</a>
+				<a href="https://blog.crypto.cat/" target="_blank">Blog</a>
 			</div>
 		</div>
-		<div id='map'></div>
 		<div id="header">
 			<img id="logo" src="img/logo.png" alt="" />
 			<h1>Cryptocat lets you chat with privacy.</h1>
@@ -35,9 +33,9 @@
 			</h1>
 		</div>
 	</div>
-	<a name="cryptocat" id="cryptocatAnchor"></a>
-	<div id="arrow"></div>
 	<div id="body">
+		<div id="arrow"></div>
+		<a name="cryptocat" id="cryptocatAnchor"></a>
 		<h1>Encrypted IM can be easy and accessible.</h1>
 		<p class="picon">&#x5f;</p>
 		<p>
@@ -49,13 +47,23 @@
 		</p>
 		<hr /><div class="smallArrow"></div>
 		<h1>It's useful for everyone.</h1>
+		<a name="warnings"></a>
 		<p class="picon">&#x5b;</p>
 		<p>
-			Cryptocat is used by friends wanting to talk to friends, by LGBTQ activists wanting to talk in privacy. By journalists wanting to work on their latest piece without compromising their scoop. Cryptocat is made for everyone.
+			Friends use Cryptocat to talk without revealing messages to a third party. LGBTQ activists use Cryptocat to keep private matters private. Journalists use Cryptocat to keep their stories and research confidential. Cryptocat is made for everyone.
 		</p>
 		<p class="picon">&#x21;</p>
 		<p>
-			Cryptocat is not a magic bullet. You should never trust any piece of software with your life, and Cryptocat is no exception.
+			Cryptocat is not a magic bullet. You should never trust any piece of software with your life, and Cryptocat is no exception. <a href="#warnings" id="warningLink">Read the full list of warnings.</a>
+			<div id="warnings">
+				<h1>What Cryptocat Doesn't Do</h1>
+				<p>While Cryptocat aims to offer strongly encrypted, private Instant Messaging, it's important to note what Cryptocat does <i>not</i> protect you against:</p>
+				<ul>
+					<li><strong>Cryptocat does not anonymize you:</strong> While your communications are encrypted, your identity can still be traced since Cryptocat does not mask your IP address. For anonymization, we highly recommend using <a href="https://torproject.org" target="_blank">Tor</a>.</li><br />
+					<li><strong>Cryptocat does not protect against key loggers:</strong> Your messages are encrypted as they go through the wire, but that doesn't mean that your keyboard is necessarily safe. Cryptocat does not protect against hardware or software key loggers which might be snooping on your keyboard strokes and sending them to an undesired tird party.</li><br />
+					<li><strong>Cryptocat does not protect against untrustworthy people:</strong> Parties you're conversing with may still leak your messages without your knowledge. Cryptocat aims to make sure that only the parties you're talking to get your messages, but that doesn't mean these parties are necessarily trustworthy.</li>
+				</ul>
+			</div>
 		</p><br />
 		<hr /><div class="smallArrow"></div>
 		<a name="documentation"></a>
@@ -70,6 +78,14 @@
 		</p>
 	</div>
 	<div id="footer">
+		<div id="footerContent">
+			<h2>People</h2>
+			<ul>
+				<li><strong>Nadim Kobeissi</strong> (<a href="mailto:nadim@crypto.cat">nadim@crypto.cat</a>): Founder, Lead Developer.</li>
+				<li><strong>Arlo Breault</strong> (<a href="mailto:arlo@crypto.cat">arlo@crypto.cat</a>): OTR Library Developer.</li>
+				<li><strong>Elisabeth Gill</strong> (<a href="mailto:elie@crypto.cat">elie@crypto.cat</a>): Community Translations Coordinator.</li>
+			</ul>
+		</div>
 		<span class="copyright">
 			Copyright 2011-2013 the Cryptocat Project
 		</span>
