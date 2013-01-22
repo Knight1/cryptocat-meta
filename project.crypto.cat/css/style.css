@@ -1,289 +1,94 @@
-html, body {
+@font-face {
+	font-family: 'Monda';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Monda Regular'), local('Monda-Regular'), url('Monda.woff') format('woff');
+}
+
+html {
+	height: 100%;
+}
+
+body {
 	font-family: Helvetica, Arial, Verdana;
 	font-size: 12px;
 	color: #FFF;
 	line-height: 1.4em;
-	margin: 4px 0 0 0;
-	background-color: #D8F6F6;
-	background-image: url('https://crypto.cat/img/bg.png');
-	text-align: justify;
+	margin: 0;
+	background: #070709;
+
 	height: 100%;
 }
 
-div.top {
-	text-align: right;
-	background-color: #97CEEC;
-	background-repeat: repeat-x;
-	height: 35px;
-	box-shadow: 1px 1px #34BEED;
-	margin: 0px 0 20px 0;
-	min-width: 960px;
-	position: relative;
-	z-index: 1;
-}
-
-img.logo {
-	position: absolute;
-	top: 2px;
-	left: 15px;
-	z-index: 2;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-	margin: 0;
-	padding: 0 0 10px 0;
-}
-
-h1 {
-	text-shadow: 2px 1px #111;
-	font-size: 22px;
-	color: #97CEEC;
-	font-weight: bold;
-}
-
-h2 {
-	font-size: 14px;
-}
-
 a {
-	color: #97CEEC;
+	color: #ADDBEF;
 	text-decoration: none;
-}
-
-a img {
-	border: none;
+	font-weight: bold;
 }
 
 a:hover {
 	text-decoration: underline;
 }
 
-ul, li {
-	list-style: square;
-	margin-left: -10px;
-}
-
-div.nav {
-	padding: 5px 0 0 0;
-	width: 690px;
-	display: block;
-	margin: 0 0px 0 auto;
-	height: 30px;
-	background-color: rgba(0, 0, 0, 0.85);
-}
-
-div.nav a {
-	text-decoration: none;
-	color: #97CEEC;
-	margin-right: 25px;
-	line-height: 2em;
-	padding: 4px;
-}
-
-div.nav a:hover, #active {
-	background-color: #FFFFFF;
-	color: #000;
-	box-shadow: 4px 4px #000;
-}
-
-div.intro {
-	position: relative;
-	width: 75.5%;
-	min-width: 1033px;
-	margin: 0 auto;
-	height: 200px;
-	z-index: 3;
-	right: 10px;
-}
-
-div.big {
-	background-color: rgba(0, 0, 0, 0.90);
-	box-shadow: 2px 2px #97CEEC;
+div#top {
 	width: 100%;
-	height: 137px;
-	padding: 15px 10px 10px 10px;
-	color: #FFF;
-	float: left;
-	min-width: 450px;
-	border-radius: 10px 0 10px 10px;
+	padding: 0 0 10px 0;
 }
 
-div.big p {
-	width: 60%;
-	font-size: 14px;
+div#top div#nav {
+	width: 100%;
+	padding: 10px 0;
+	height: 20px;
+	background: #ADDBEF;
 }
 
-div.big #media {
-	font-style: italic;
-	width: 57%;
-	height: 30px;
-	background-color: rgba(0, 0, 0, 0.6);
-	padding: 7px 9px;
-	border: 1px dashed #97CEEC;
-	border-right: none;
-	border-bottom: none;
-	box-shadow: 2px 2px #97CEEC;
-}
-
-div.big #mediaQuote {
-	margin: 0;
-	width: 600px;
-	font-size: 12px;
-}
-
-div.big #mediaSource {
-	font-style: normal;
-	font-weight: bold;
-	color: #97CEEC;
-}
-
-div.column2 img {
-	display: inline;
-	float: left;
-	margin: 6px 10px 0 0;
-}
-
-div.user p {
-	display: inline;
-}
-
-div.main {
-	width: 76%;
-	min-width: 1040px;
-	background-color: rgba(27, 34, 40, 0.97);
-	min-height: 800px;
-	height: 70%;
-	margin: -10px auto 0 auto;
-	border-top: 4px solid #444;
-	border-bottom: none;
-	line-height: 1.5em;
-	color: #EEE;
-	border-left: 6px solid #141B21;
-	border-right: 6px solid #141B21;
-	position: relative;
-	z-index: 3;
-	background-repeat: repeat-y;
-	padding-bottom: 20px;
-}
-
-div.main h1, div.main h2 {
-	margin-bottom: -10px;
-	color: #97CEEC;
-}
-
-div.column1, div.column2 {
-	width: 47%;
-	height: 400px;
-	float: right;
-	margin: 15px 15px 0px 15px;
-}
-
-div.column1 p, div.column2 p, div.column1 ul, div.column2 ul {
-	max-width: 90%;
-}
-
-div.user {
-	margin-bottom: 20px;
-	max-width: 90%;
-	min-width: 430px;
-	height: 120px;
-}
-
-div.user img {
-	border: 2px solid #FFF;
-	border-bottom: 18px solid #FFF;
-	width: 90px;
-	box-shadow: 3px 3px 3px #000;
-	margin-top: 0;
-}
-
-div.footer {
-	width: 76%;
-	height: 40px;
-	min-width: 1040px;
-	background-color: #141B21;
-	margin: 0 auto;
-	font-size: 10px;
-	border-left: 6px solid #141B21;
-	border-right: 6px solid #141B21;
-	padding: 5px 0 0 0;
-}
-
-div.footer img {
-	float: left;
-	max-height: 36px;
-}
-
-div.footer img.rfa {
-	margin: 0 0 0 6px;
-	float: right;
-}
-
-div.footer p {
-	display: inline;
-	float: right;
-	margin-top: 0;
-	text-align: right;
-}
-
-iframe {
-	border: 0;
-	box-shadow: 2px 2px #97CEEC;
-}
-
-#browserLogo {
-	width: 110px;
-	position: relative;
-	right: 55px;
-	margin: 0;
-	display: inline;
-	bottom: 20px;
-}
-#download {
-	float: right;
-	position: relative;
-	bottom: 125px;
-	font-weight: bold;
-}
-#download a:hover {
-	text-decoration: none;
-}
-#downloadButton {
-	width: 275px;
-	height: 90px;
-	background-image: linear-gradient(bottom, rgb(129,189,222) 25%, rgb(161,222,255) 63%);
-	background-image: -o-linear-gradient(bottom, rgb(129,189,222) 25%, rgb(161,222,255) 63%);
-	background-image: -moz-linear-gradient(bottom, rgb(129,189,222) 25%, rgb(161,222,255) 63%);
-	background-image: -webkit-linear-gradient(bottom, rgb(129,189,222) 25%, rgb(161,222,255) 63%);
-	background-image: -ms-linear-gradient(bottom, rgb(129,189,222) 25%, rgb(161,222,255) 63%);
-	box-shadow: 4px 4px #222;
-	border-radius: 10px 0 10px 10px;
+div#top div#header {
+	background: rgba(0, 0, 0, 0.92);
 	padding: 10px;
-}
-#downloadButton:hover {
-	cursor: pointer;
-	background-image: linear-gradient(bottom, rgb(139,208,245) 25%, rgb(182,226,250) 63%);
-	background-image: -o-linear-gradient(bottom, rgb(139,208,245) 25%, rgb(182,226,250) 63%);
-	background-image: -moz-linear-gradient(bottom, rgb(139,208,245) 25%, rgb(182,226,250) 63%);
-	background-image: -webkit-linear-gradient(bottom, rgb(139,208,245) 25%, rgb(182,226,250) 63%);
-	background-image: -ms-linear-gradient(bottom, rgb(139,208,245) 25%, rgb(182,226,250) 63%);
-}
-#downloadButton p {
-	margin: -5px 0 0 10px;
+	margin: 70px 0 0 0;
+	height: 200px;
+	width: 100%;
 	position: relative;
-	bottom: 101px;
-	width: 230px;
-	left: 50px;
-	display: block;
-	font-size: 22px;
-	text-shadow: 1px 1px #666;
-	line-height: 30px;
-	color: #FFF;
-	text-align: left;
-	padding: 0;
+	z-index: 2;
+	box-shadow: 3px 3px 25px #000;
 }
-.downloadText {
-	display: block;
-	margin-top: 10px;
+
+div#top img#logo {
+	float: left;
+	z-index: 3;
+	position: relative;
+	margin: 0 0 0 10px;
+}
+
+div#top h1 {
+	font-weight: 100;
+	font-size: 36px;
+	font-family: 'Monda';
+	color: #97CEEC;
+	display: inline;
+	margin: 0 0 0 40px;
+	line-height: 1.4em;
+	position: relative;
+	top: 20px;
+	text-shadow: 0 0 20px #333;
+}
+
+div#top div#header p {
+	font-size: 16px;
+	margin: 25px 0 0 40px;
+	line-height: 1.4em;
+	width: 800px;
+	font-family: 'Monda';
+	position: relative;
+	left: 40px;
+}
+
+#map {
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	top: 40px;
+	z-index: 0;
+	opacity: 1;
+	border-bottom: 6px solid #97CEEC;
 }
