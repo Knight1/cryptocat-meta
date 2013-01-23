@@ -187,7 +187,8 @@ a.cryptocatAnchor {
 div#body {
 	padding: 10px;
 	margin: 620px auto 0 auto;
-	width: 740px;
+	width: 800px;
+	text-align: justify;
 	-webkit-font-smoothing: antialiased;
 }
 
