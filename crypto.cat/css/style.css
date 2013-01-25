@@ -236,6 +236,15 @@ div#footer {
 div#footer table {
 	min-width: 700px;
 }
+div#footer table td {
+	height: 170px;
+	display: inline-block;
+	margin-left: 10px;
+	border: 1px dashed #FFF;
+	padding: 5px;
+	border-left: none;
+	border-right: none;
+}
 
 div#footer .copyright {
 	text-align: left;
