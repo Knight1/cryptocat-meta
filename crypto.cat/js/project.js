@@ -83,10 +83,10 @@ $('#cryptocatLink').click(function(e) {
 	scrollToAnchor(aid);
 });
 
-$('#map').animate({
-	'background-position-x': '0%',
-	'background-position-y': '50%'
-}, 60000, 'linear');
+//$('#map').animate({
+//	'background-position-x': '0%',
+//	'background-position-y': '50%'
+//}, 60000, 'linear');
 
 $('#warningLink').click(function(e) {
 	e.preventDefault();
