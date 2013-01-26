@@ -1,6 +1,4 @@
 $(window).load(function() {
-	
-var browser = detectBrowser();
 
 var downloadLink = {
 	'chrome': {
@@ -93,16 +91,23 @@ function scrollToAnchor(aid){
 	$('body').animate({scrollTop: aTag.offset().top}, 800);
 }
 
+function displayQuote(n) {
+	var quote = mediaQuotes[n]['quote'] + ' — <strong>' + mediaQuotes[n]['source'] + '</strong>';
+	$('#mediaQuotes').animate({'opacity': '0'}, 700, function() {
+		$(this).html(quote);
+		$(this).animate({'opacity': '1'}, 700);
+	});
+}
+
+var browser = detectBrowser();
+$('.downloadLink').text(downloadLink[browser]['text']);
+$('.downloadLink').attr('href', downloadLink[browser]['link']);
+
 $('#cryptocatLink').click(function(e) {
 	e.preventDefault();
 	var aid = $(this).attr('href').substring(1);
 	scrollToAnchor(aid);
 });
-
-//$('#map').animate({
-//	'background-position-x': '0%',
-//	'background-position-y': '50%'
-//}, 60000, 'linear');
 
 $('#warningLink').click(function(e) {
 	e.preventDefault();
@@ -113,8 +118,12 @@ $('#warningLink').click(function(e) {
 	});
 });
 
+var q = 1; window.setInterval(function() {
+	displayQuote(q);
+	q++;
+	if (q >= mediaQuotes.length) { q = 0 }
+}, 7000);
 
-$('.downloadLink').text(downloadLink[browser]['text']);
-$('.downloadLink').attr('href', downloadLink[browser]['link']);
+displayQuote(0);
 
 });
