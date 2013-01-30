@@ -23,6 +23,12 @@ var downloadLink = {
 	}
 };
 
+if (document.URL.match('.cat/ca')) {
+	downloadLink['chrome']['text'] = 'Descarrega\'t Cryptocat per Chrome';
+	downloadLink['firefox']['text'] = 'Descarrega\'t Cryptocat per Firefox';
+	downloadLink['safari']['text'] = 'Descarrega\'t Cryptocat per Safari';
+}
+
 var mediaQuotes = [
 	{
 		'quote': '“Cryptocat has a simple, countercultural goal: people should be able to talk on the Internet without being subjected to surveillance.”',

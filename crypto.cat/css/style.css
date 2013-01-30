@@ -77,6 +77,11 @@ div#map div#nav {
 	top: 0;
 }
 
+a#ca {
+	font-size: 14px;
+	margin-left: 20px;
+}
+
 div#map div#nav img#cryptocatLogo {
 	float: left;
 	margin-left: 20px;
