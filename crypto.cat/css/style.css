@@ -20,7 +20,7 @@
 body {
 	font-family: Helvetica, Arial, Verdana;
 	font-size: 12px;
-	background: #080810;
+	background: #97CEEC;
 	color: #FFF;
 	line-height: 1.4em;
 	margin: 0;
@@ -28,7 +28,7 @@ body {
 }
 
 a {
-	color: #ADDBEF;
+	color: #000;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -37,7 +37,7 @@ h1 {
 	font-weight: 100;
 	font-size: 32px;
 	font-family: 'Monda', sans-serif;
-	color: #97CEEC;
+	color: #FFF;
 	line-height: 1.4em;
 }
 
@@ -60,7 +60,7 @@ div#map {
 	height: 630px;
 	top: 0;
 	z-index: 10;
-	border-bottom: 6px solid #97CEEC;
+	border-bottom: 6px solid #080812;
 	background: url('../img/map.png');
 	background-position: 20% 50%;
 }
@@ -104,16 +104,17 @@ div#map div#nav a {
 
 div#map div#header {
 	color: #FFF;
-	background: rgba(0, 0, 0, 0.9);
+	background: rgba(151, 206, 236, 0.95);
 	padding: 10px 0;
 	margin: 130px 0 275px 0;
 	height: 200px;
 	width: 100%;
 	min-width: 900px;
 	position: relative;
-	-webkit-font-smoothing: antialiased;
+	
 	z-index: 2;
-	box-shadow: 3px 3px 25px #000;
+	border-bottom: 1px solid #FFF;
+	border-top: 1px solid #FFF;
 }
 
 .picon {
@@ -170,12 +171,12 @@ div#map div#header p {
 	border-style: solid;
 	border-width: 55px 55px 0 55px;
 	margin: 0 auto;
-	border-color: #97CEEC transparent transparent transparent;
+	border-color: #000 transparent transparent transparent;
 }
 
 hr {
 	width: 100%;
-	border: 1px solid #97CEEC;
+	border: 1px solid #000;
 	margin-bottom: 0;
 }
 
@@ -192,9 +193,8 @@ a.cryptocatAnchor {
 div#body {
 	padding: 10px;
 	margin: 620px auto 0 auto;
-	width: 800px;
+	width: 900px;
 	text-align: justify;
-	-webkit-font-smoothing: antialiased;
 }
 
 div#body h1 {
@@ -218,7 +218,7 @@ div#body p.picon {
 }
 
 div#body strong {
-	color: #999;
+	color: #EEE;
 }
 
 div#body div#warningsBox {
@@ -234,13 +234,13 @@ div#footer {
 	padding: 10px 0 10px 0;
 	background: rgba(173, 219, 239, 0.95);
 	margin-top: 50px;
-	box-shadow: 5px 0 10px #222;
-	color: #000;
+	border-top: 1px solid #FFF;
 }
 
 div#footer table {
 	min-width: 700px;
 }
+
 div#footer table td {
 	height: 170px;
 	display: inline-block;
@@ -265,10 +265,6 @@ div#footer .social {
 	margin: -65px 30px 0 0;
 }
 
-div#footer .social a {
-	color: #000;
-}
-
 div#footer .social a:hover {
 	text-decoration: none;
 	text-shadow: 0 0 30px #FFF;
@@ -277,8 +273,4 @@ div#footer .social a:hover {
 div#footer div#footerContent {
 	padding: 0 20px 20px 20px;
 	font-family: 'Monda', sans-serif;
-}
-
-div#footer div#footerContent a {
-	color: #FFF;
 }
