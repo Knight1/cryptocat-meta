@@ -108,6 +108,12 @@ function displayQuote(n) {
 var browser = detectBrowser();
 $('.downloadLink').text(downloadLink[browser]['text']);
 $('.downloadLink').attr('href', downloadLink[browser]['link']);
+if (browser === 'chrome') {
+	$('.downloadLink').click(function(e) {
+		e.preventDefault();
+		chrome.webstore.install('https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij');
+	});
+}
 
 $('#cryptocatLink').click(function(e) {
 	e.preventDefault();
