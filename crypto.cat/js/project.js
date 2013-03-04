@@ -144,9 +144,4 @@ $('#warningLink').click(function(e) {
 
 displayQuote(0); */
 
-$('#map').animate({
-	'background-position-x': '20%',
-	'background-position-y': '50%'
-}, 2200000, 'linear');
-
 });
