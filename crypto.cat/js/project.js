@@ -14,11 +14,11 @@ var downloadLink = {
 		'link': 'https://crypto.cat/get/cryptocat.safariextz'
 	},
 	'opera': {
-		'text': 'Unfortunately, Cryptocat is only available for Chrome, Firefox and Safari',
+		'text': 'Cryptocat is not available for your browser.',
 		'link': '#'
 	},
 	'internetExplorer': {
-		'text': 'Unfortunately, Cryptocat is only available for Chrome, Firefox and Safari',
+		'text': 'Cryptocat is not available for your browser.',
 		'link': '#'
 	}
 };
@@ -27,6 +27,8 @@ if (document.URL.match('.cat/ca')) {
 	downloadLink['chrome']['text'] = 'Descarrega\'t Cryptocat per Chrome';
 	downloadLink['firefox']['text'] = 'Descarrega\'t Cryptocat per Firefox';
 	downloadLink['safari']['text'] = 'Descarrega\'t Cryptocat per Safari';
+	downloadLink['opera']['text'] = 'Cryptocat no està disponible per al teu navegador.';
+	downloadLink['internetExplorer']['text'] = 'Cryptocat no està disponible per al teu navegador.';
 }
 
 var mediaQuotes = [
@@ -115,6 +117,10 @@ if (browser === 'chrome') {
 	});
 }
 
+if (navigator.userAgent.match('Macintosh')) {
+	//$('#macStore').delay(200).fadeIn(1200);
+}
+
 $('#cryptocatLink').click(function(e) {
 	e.preventDefault();
 	var aid = $(this).attr('href').substring(1);
@@ -130,12 +136,17 @@ $('#warningLink').click(function(e) {
 	});
 });
 
-var q = 1; window.setInterval(function() {
+/* var q = 1; window.setInterval(function() {
 	displayQuote(q);
 	q++;
 	if (q >= mediaQuotes.length) { q = 0 }
 }, 7000);
 
-displayQuote(0);
+displayQuote(0); */
+
+$('#map').animate({
+	'background-position-x': '20%',
+	'background-position-y': '50%'
+}, 2200000, 'linear');
 
 });

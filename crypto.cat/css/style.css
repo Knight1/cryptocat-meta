@@ -62,7 +62,7 @@ div#map {
 	z-index: 10;
 	border-bottom: 6px solid #97CEEC;
 	background: url('../img/map.png');
-	background-position: 20% 50%;
+	background-position: 10000% 50%;
 }
 
 div#map div#nav {
@@ -150,17 +150,36 @@ div#map img#logo {
 	height: 200px;
 }
 
+#macStore {
+	margin: 15px 0 0 0;
+	position: relative;
+	left: 48px;
+	width: 750px;
+	font-family: 'Monda';
+	font-weight: bold;
+	font-size: 18px;
+	color: #080816;
+	display: none;
+}
+
+#macStore span {
+	position: relative;
+	bottom: 25px;
+}
+
+#macStore img {
+	width: 145px;
+}
+
 div#map h1 {
 	display: inline;
 	margin: 0 0 0 40px;
-	position: relative;
-	top: 20px;
 	font-size: 36px;
 }
 
 div#map div#header p {
 	font-size: 16px;
-	margin: 25px 0 0 40px;
+	margin: 0 0 0 40px;
 	line-height: 1.4em;
 	min-width: 800px;
 	width: 800px;
