@@ -118,7 +118,7 @@ if (browser === 'chrome') {
 }
 
 if (navigator.userAgent.match('Macintosh')) {
-	//$('#macStore').delay(200).fadeIn(1200);
+	$('#macStore').delay(200).fadeIn(1200);
 }
 
 $('#cryptocatLink').click(function(e) {
