@@ -1,5 +1,3 @@
-$(window).load(function() {
-
 var downloadLink = {
 	'chrome': {
 		'text': 'Download Cryptocat for Chrome',
@@ -139,5 +137,3 @@ $('#warningLink').click(function(e) {
 }, 7000);
 
 displayQuote(0); */
-
-});
