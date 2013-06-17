@@ -38,7 +38,6 @@ h1 {
 	font-weight: 100;
 	font-size: 32px;
 	font-family: 'Monda', sans-serif;
-	color: #97CEEC;
 	line-height: 1.4em;
 }
 
@@ -66,8 +65,11 @@ div#map {
 	top: 0;
 	z-index: 10;
 	border-bottom: 6px solid #97CEEC;
-	background: url('../img/map.png');
-	background-position: 20% 50%;
+	background: url('../img/map.jpg');
+	background-size: 972px auto;
+	background-repeat: repeat-x;
+	background-color: white;
+	background-position: bottom left;
 }
 
 div#map div#nav {
@@ -110,7 +112,7 @@ div#map div#nav a {
 }
 
 div#map div#header {
-	background: #97CEEC;
+	background: rgba(0, 0, 0, 0.8);
 	padding: 10px 0;
 	margin: 130px 0 275px 0;
 	height: 200px;
@@ -118,8 +120,9 @@ div#map div#header {
 	min-width: 900px;
 	position: relative;
 	z-index: 2;
-	border-bottom: 1px solid #FFF;
-	border-top: 1px solid #FFF;
+	color: #97CEEC;
+	border-top: 6px solid #080815;
+	border-bottom: 6px solid #080815;
 }
 
 .picon {
@@ -129,11 +132,12 @@ div#map div#header {
 
 div#header .picon {
 	color: #FFF;
+	position: relative;
+	top: 10px;
 }
 
 div#map div#header .picon {
 	font-size: 50px;
-	text-shadow: 0 0 25px #97CEEC;
 }
 
 div#map div#header a {
@@ -141,12 +145,8 @@ div#map div#header a {
 	font-size: 24px;
 	position: relative;
 	bottom: 10px;
-	color: #000;
+	color: #FFF;
 	vertical-align: 3px;
-}
-
-.downloadLink {
-	text-shadow: 0 0 15px #97CEEC;
 }
 
 div#map img#logo {
@@ -159,23 +159,31 @@ div#map img#logo {
 }
 
 #macStore {
-	margin: 15px 0 0 0;
+	margin: 20px 0 0 0;
 	position: relative;
 	left: 48px;
 	width: 750px;
 	font-family: 'Monda';
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 14px;
 	display: none;
 }
 
-#macStore span {
-	position: relative;
-	bottom: 25px;
+#macStore a:hover {
+	text-decoration: none;
 }
 
-#macStore img {
-	width: 145px;
+
+#macStore span {
+	position: relative;
+	color: #FFF;
+	font-size: 14px;
+}
+
+#macStore span.apple {
+	font-size: 35px; 
+	top: 12px;
+	right: 2px;
 }
 
 div#map h1 {
@@ -186,13 +194,19 @@ div#map h1 {
 
 div#map div#header p {
 	font-size: 16px;
-	margin: 0 0 0 40px;
+	margin: 15px 0 0 40px;
 	line-height: 1.4em;
 	min-width: 800px;
 	width: 800px;
 	font-family: 'Monda', sans-serif;
 	position: relative;
 	left: 40px;
+}
+
+.downloadLink {
+	position: relative;
+	top: 1px;
+	left: 5px;
 }
 
 #arrow, .smallArrow {
@@ -270,7 +284,7 @@ div#footer {
 	padding: 10px 0 10px 0;
 	background: #97CEEC;
 	margin-top: 50px;
-	border-top: 3px solid #76BDE5;
+	border-top: 6px solid #76BDE5;
 }
 
 div#footer table {
@@ -281,7 +295,6 @@ div#footer table td {
 	height: 170px;
 	display: inline-block;
 	margin-left: 10px;
-	border: 1px dashed #FFF;
 	padding: 5px;
 	border-left: none;
 	border-right: none;

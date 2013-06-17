@@ -117,10 +117,6 @@ if (browser === 'chrome') {
 	});
 }
 
-if (navigator.userAgent.match('Macintosh')) {
-	$('#macStore').delay(200).fadeIn(1200);
-}
-
 $('#cryptocatLink').click(function(e) {
 	e.preventDefault();
 	var aid = $(this).attr('href').substring(1);
