@@ -26,6 +26,7 @@ body {
 	line-height: 1.4em;
 	margin: 0;
 	height: 100%;
+	color: #111;
 }
 
 a {
@@ -262,7 +263,7 @@ div#body p.picon {
 }
 
 div#body strong {
-	color: #444;
+	color: #000;
 }
 
 div#body div#warningsBox {
@@ -281,10 +282,11 @@ div#body div#warningsBox strong {
 
 div#footer {
 	width: 100%;
-	padding: 10px 0 10px 0;
-	background: #97CEEC;
+	padding: 0 0 10px 0;
+	background: #080815;
+	color: #FFF;
 	margin-top: 50px;
-	border-top: 6px solid #76BDE5;
+	border-top: 10px solid #222;
 }
 
 div#footer table {
@@ -292,16 +294,16 @@ div#footer table {
 }
 
 div#footer table td {
-	height: 170px;
+	height: 130px;
 	display: inline-block;
 	margin-left: 10px;
-	padding: 5px;
+	padding: 2px 5px 5px 5px;
 	border-left: none;
 	border-right: none;
 }
 
 div#footer a {
-	color: #000;
+	color: #97CEEC;
 }
 
 div#footer .copyright {
