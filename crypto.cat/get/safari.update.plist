@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+	
 <dict>
-   <key>Extension Updates</key>
-   <array>
-     <dict>
-       <key>CFBundleIdentifier</key>
-       <string>com.cryptocat.cryptocat</string>
-       <key>Developer Identifier</key>
-       <string>HC689Z8JM4</string>
-       <key>CFBundleVersion</key>
-       <string>2.1.5</string>
-       <key>CFBundleShortVersionString</key>
-       <string>2.1.5</string>
-       <key>URL</key>
-       <string>https://crypto.cat/get/cryptocat.safariextz</string>
-     </dict>
-   </array>
+	<key>Extension Updates</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.cryptocat.cryptocat</string>
+			<key>Developer Identifier</key>
+			<string>HC689Z8JM4</string>
+			<key>CFBundleVersion</key>
+			<string>2.1.10</string>
+			<key>CFBundleShortVersionString</key>
+			<string>2.1.10</string>
+			<key>URL</key>
+			<string>https://crypto.cat/get/cryptocat.safariextz</string>
+		</dict>
+	</array>
 </dict>
+
 </plist>
