@@ -71,7 +71,7 @@ div#map {
 	background-repeat: repeat-x;
 	background-color: white;
 	background-position: bottom left;
-	min-width: 880px;
+	min-width: 900px;
 }
 
 div#map div#nav {
@@ -298,6 +298,7 @@ div#footer {
 	color: #FFF;
 	margin-top: 50px;
 	border-top: 12px solid #222;
+	min-width: 1150px;
 }
 
 div#footer table {
@@ -325,16 +326,23 @@ div#footer .copyright {
 }
 
 div#footer .social {
-	font-size: 50px;
+	font-size: 40px;
 	text-align: right;
 	float: right;
-	margin: -65px 30px 0 0;
+	margin: -80px 180px 0 0;
 	color: #FFF;
 }
 
 div#footer .social a:hover {
 	text-decoration: none;
 	text-shadow: 2px 2px #FFF;
+}
+
+div#footer .IDLBadge {
+	width: 140px;
+	height: auto;
+	float: right;
+	margin: -140px 20px 0 0;
 }
 
 div#footer div#footerContent {
