@@ -19,14 +19,14 @@ var downloadLink = {
 		'text': 'Cryptocat is not available for your browser.',
 		'link': '#'
 	}
-};
+}
 
 if (document.URL.match('.cat/ca')) {
-	downloadLink['chrome']['text'] = 'Descarrega\'t Cryptocat per Chrome';
-	downloadLink['firefox']['text'] = 'Descarrega\'t Cryptocat per Firefox';
-	downloadLink['safari']['text'] = 'Descarrega\'t Cryptocat per Safari';
-	downloadLink['opera']['text'] = 'Cryptocat no està disponible per al teu navegador.';
-	downloadLink['internetExplorer']['text'] = 'Cryptocat no està disponible per al teu navegador.';
+	downloadLink['chrome']['text'] = 'Descarrega\'t Cryptocat per Chrome'
+	downloadLink['firefox']['text'] = 'Descarrega\'t Cryptocat per Firefox'
+	downloadLink['safari']['text'] = 'Descarrega\'t Cryptocat per Safari'
+	downloadLink['opera']['text'] = 'Cryptocat no està disponible per al teu navegador.'
+	downloadLink['internetExplorer']['text'] = 'Cryptocat no està disponible per al teu navegador.'
 }
 
 var mediaQuotes = [
@@ -74,66 +74,60 @@ var mediaQuotes = [
 		'quote': '“Cryptocat works inside a web browser and enables people to chat online via encrypted instant messaging.”',
 		'source': 'BBC News'
 	}
-];
+]
 
 function detectBrowser() {
 	if (navigator.userAgent.match('Chrome')) {
-		return 'chrome';
+		return 'chrome'
 	}
 	if (navigator.userAgent.match('Firefox')) {
-		return 'firefox';
+		return 'firefox'
 	}
 	if (navigator.userAgent.match('Opera')) {
-		return 'opera';
+		return 'opera'
 	}
 	if (navigator.userAgent.match('MSIE')) {
-		return 'internetExplorer';
+		return 'internetExplorer'
 	}
-	return 'safari';
+	return 'safari'
 }
 
 function scrollToAnchor(aid){
-	var aTag = $('#' + aid);
-	$('body').animate({scrollTop: aTag.offset().top}, 800);
+	var aTag = $('#' + aid)
+	$('html,body').animate({scrollTop: aTag.offset().top}, 800)
 }
 
 function displayQuote(n) {
-	var quote = mediaQuotes[n]['quote'] + ' — <strong>' + mediaQuotes[n]['source'] + '</strong>';
+	var quote = mediaQuotes[n]['quote'] + ' — <strong>' + mediaQuotes[n]['source'] + '</strong>'
 	$('#mediaQuotes').animate({'opacity': '0'}, 700, function() {
-		$(this).html(quote);
-		$(this).animate({'opacity': '1'}, 700);
-	});
+		$(this).html(quote)
+		$(this).animate({'opacity': '1'}, 700)
+	})
 }
 
-var browser = detectBrowser();
-$('.downloadLink').text(downloadLink[browser]['text']);
-$('.downloadLink').attr('href', downloadLink[browser]['link']);
+var browser = detectBrowser()
+$('.downloadLink').text(downloadLink[browser]['text'])
+$('.downloadLink').attr('href', downloadLink[browser]['link'])
 if (browser === 'chrome') {
 	$('.downloadLink').click(function(e) {
-		e.preventDefault();
-		chrome.webstore.install('https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij');
-	});
+		e.preventDefault()
+		chrome.webstore.install('https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij')
+	})
 }
 
 $('#cryptocatLink').click(function(e) {
-	e.preventDefault();
-	var aid = $(this).attr('href').substring(1);
-	scrollToAnchor(aid);
-});
+	e.preventDefault()
+	var aid = $(this).attr('href').substring(1)
+	scrollToAnchor('cryptocat')
+})
 
 $('#warningLink').click(function(e) {
-	e.preventDefault();
-	$('#warningsBox').slideDown(500, function() {
-		window.setTimeout(function() {
-			scrollToAnchor('warnings');
-		});
-	});
-});
+	e.preventDefault()
+	$('#warningsBox').slideDown(500)
+	scrollToAnchor('warnings')
+})
 
-/* var q = 1; window.setInterval(function() {
-	displayQuote(q);
-	q++;
-	if (q >= mediaQuotes.length) { q = 0 }
-}, 7000);
-
-displayQuote(0); */
+$('#warningInfo').click(function(e) {
+	e.preventDefault()
+	$('#warningLink').click()
+})
