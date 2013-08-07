@@ -209,7 +209,7 @@ div#map div#header p {
 	border-radius: 5px 0 5px 5px;
 	background: rgba(151, 206, 236, 0.9);
 	padding: 7px;
-	margin-top: 15px;
+	margin: 15px 0;
 	font-size: 24px;
 	position: relative;
 	bottom: 10px;
@@ -218,7 +218,7 @@ div#map div#header p {
 }
 
 span.warning {
-    margin-top: 15px;
+    margin-top: 25px;
     display: block;
     color: #FFF;
 }
