@@ -4,7 +4,7 @@
 	<meta name="author" content="The Cryptocat Project" />
 	<meta name="keywords" content="cryptocat, private chat, private im, secure im, secure chat, 
 		encrypted chat, encrypted im, open source encrypted chat, crypto cat" />
-	<meta name="description" content="Cryptocat et permet xatejar amb privacitat. Estem desenvolupant una aplicació web que encrypt de forma fàcil les tees converses. És de codi obert, està disposable en 32 llengúes i ja saps com fer-lo server." />
+	<meta name="description" content="Cryptocat et permet xatejar amb privacitat. Una aplicació web que encripta de forma fàcil les teves converses. És de codi obert, està disponible en 32 llengües i és tan simple que ja la saps fer servir." />
 	<title>Cryptocat</title>
 	<link rel="stylesheet" href="../css/style.css" type="text/css" />
 	<link rel="icon" type="image/gif" href="../img/favicon.gif" />
@@ -20,7 +20,7 @@
 				<a id="cryptocatLink" href="#cryptocat">Cryptocat</a>
 				<a href="https://github.com/cryptocat/cryptocat/wiki/" target="_blank">Documentació</a>
 				<a href="https://blog.crypto.cat/" target="_blank">Bloc</a>
-				<a href="http://cryptocat.tictail.com" target="_blank">Emmagatzemar</a>
+				<a href="http://cryptocat.tictail.com" target="_blank">Botiga</a>
 				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=2M2TJ3PUD8K8W" target="_blank">Donar</a>
 			</div>
 		</div>
@@ -32,6 +32,8 @@
 				<br /><br />
 				<span class="picon">&#x77;</span>
 				<a class="downloadLink" href="#" target="_blank"></a>
+				<br /><span class="warning"><span style="color:#F00;font-weight:bold">Atenció!</span> 
+				Cryptocat està encara en desenvolupament. <a href="#" id="warningInfo">Més informació</a></span>
 			</p>
 		</div>
 	</div>
@@ -55,8 +57,17 @@
 		</p>
 		<p class="picon">&#x21;</p>
 		<p>
-			Cryptocat no és perfecte. Mai deixis la teva vida en mans de cap programa. Cryptocat no es cap excepció.
+			Cryptocat no és perfecte i encara està en desenvolupament. Mai deixis la teva vida en mans de cap programa. Cryptocat no es cap excepció. <a href="#warnings" id="warningLink">Llegeix les advertències.</a>
 		</p><br />
+		<div id="warningsBox">
+			<h1>Què no fa Cryptocat?</h1>
+			<p>L'objectiu de Cryptocat és oferir missatgeria instantània encriptada. Es molt important ser conscient de contra què <i>no</i> protegeix Cryptocat:</p>
+			<ul>
+				<li><strong>Cryptocat no proporciona anonimitat:</strong> Encara que les teves comunicacions estàn encriptades, la teva identitat pot ser revelada ja que Cryptocat no oculta la teva adreça IP. Per a obtenir anonimitat, recomanem que facis servir <a href="https://torproject.org" target="_blank">Tor</a>.</li>
+				<li><strong>Cryptocat no protegeix contra <i>key loggers</i>:</strong> Els teus missatges estàn encryptats al viatgar per la xarxa, però aixo no implica que el teu teclat sigui segur. Cryptocat no protegeix contra programari o dispositius que monitoritzen el teu teclat i envien el que escrius a tercers.</li>
+				<li><strong>Cryptocat no protegeix contra persones dolentes:</strong> Gent amb qui parles pot filtrar els teus missatges sense el teu coneixement. L'objectiu de Cryptocat és garantitzar que només les persones amb qui parles reben els teus missatges, però aquestes persones no tenen perquè ser dignes de confiança.</li>
+			</ul>
+		</div><br />
 		<hr /><div class="smallArrow"></div>
 		<h1 id="documentation">Codi obert, documentació oberta</h1>
 		<p class="picon">&#x46;</p>
@@ -83,7 +94,7 @@
 					<td>
 						<h2>Enllaços</h2>
 						<ul>
-							<li><a target="_blank" href="https://github.com/cryptocat/cryptocat/issues/">Code repository and bug tracker</a></li>
+							<li><a target="_blank" href="https://github.com/cryptocat/cryptocat/issues/">Repositori i <i>bug tracker</i></a></li>
 							<li><a target="_blank" href="documents/report-1213.pdf">Informe del projecte 2012-2013</a></li>
 							<li><a target="_blank" href="https://crypto.cat/bughunt/">Cryptocat Bug Hunt</a></li>
 							<li><a target="_blank" href="http://www.catalanculture.com/">Descobreix la cultura Catalana!</a></li>
