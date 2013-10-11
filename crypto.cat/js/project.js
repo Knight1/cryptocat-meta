@@ -122,6 +122,7 @@ $('#cryptocatLink').click(function(e) {
 })
 
 $('#warningLink').click(function(e) {
+	$(this).fadeOut()
 	e.preventDefault()
 	$('#warningsBox').slideDown(500)
 	scrollToAnchor('warnings')
