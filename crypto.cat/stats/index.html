@@ -50,8 +50,8 @@
 	<script type="application/javascript">
 		$(window).load(function() {
 	
-		var x = ['']
-		var y = [0]
+		var x = []
+		var y = []
 		
 		function updateChart() {
 			$.get('https://crypto.cat/stats/c.txt', function(data) {
@@ -106,6 +106,9 @@
 		window.setInterval(function() {
 			updateChart()
 		}, 61234)
+		window.setTimeout(function() {
+			updateChart()
+		}, 1000)
 		updateChart()
 		
 		})
