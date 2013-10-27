@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Cryptocat Network Active Users</title>
+	<style type="text/css">
+		body {
+			background: #97CEEC;
+			color: #FFF;
+			font-family: sans-serif;
+		}
+		div#chart {
+			margin: 40px auto 0 auto;
+			display: block;
+			width: 1000px;
+		}
+		div#header {
+			width: 560px;
+			margin: 0 auto;
+			display: block;
+		}
+		img#logo {
+			width: 80px;
+			height: auto;
+			float: left;
+		}
+		span#title {
+			vertical-align: -32px;
+			margin-left: 20px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		p#info {
+			text-align: center;
+			font-weight: bold;
+		}
+	</style>
+	<script type="application/javascript" src="https://crypto.cat/js/jquery.js"></script>
+	<script type="application/javascript" src="js/chart.js"></script>
+</head>
+<body>
+	<div id="header">
+		<img src="https://crypto.cat/img/logo.png" alt="Cryptocat" id="logo">
+		<span id="title">Cryptocat Network Active Users</span>
+	</div>
+	<div id="chart"></div>
+	<p id="info">
+		Graph updates every minute.<br />
+		Statistics do not cover third-party Cryptocat networks.
+	</p>
+	<script type="application/javascript">
+		$(window).load(function() {
+	
+		var x = ['']
+		var y = [0]
+		
+		function updateChart() {
+			$.get('https://crypto.cat/stats/c.txt', function(data) {
+				x.push(currentTime())
+				y.push(parseInt(data))
+				generateChart(x, y)
+			})
+		}
+		
+		function currentTime() {
+			var date = new Date()
+			var time = []
+			time.push(date.getHours().toString())
+			time.push(date.getMinutes().toString())
+			for (var just in time) {
+				if (time[just].length === 1) {
+					time[just] = '0' + time[just]
+				}
+			}
+			return time.join(':')
+		}
+	
+		function generateChart(l, d) {
+			var data = {
+				labels: l,
+				datasets: [
+					{
+						fillColor: 'rgba(20, 100, 150, 0.4)',
+						strokeColor: '#FFF',
+						pointColor: 'rgba(151,187,205,1)',
+						pointStrokeColor: '#FFF',
+						data: d
+					}
+				]
+			}
+			var options = {
+				scaleOverride: true,
+				scaleSteps: 10,
+				scaleStartValue: 0,
+				scaleStepWidth: 10,
+				scaleFontSize: 14,
+				scaleFontColor: '#FFF',
+				scaleFontStyle: 'bold',
+				animation: false,
+				pointDotRadius: 6,
+			}
+			$('div#chart').html('<canvas id="myChart" width="1000" height="500"></canvas>')
+			var ctx = $('canvas#myChart').get(0).getContext('2d')
+			var myChart = new Chart(ctx).Line(data, options)
+		}
+		
+		window.setInterval(function() {
+			updateChart()
+		}, 61234)
+		updateChart()
+		
+		})
+	</script>
+</body>
+</html>
