@@ -12,6 +12,7 @@
 			margin: 40px auto 0 auto;
 			display: block;
 			width: 1000px;
+			height: 500px;
 		}
 		div#header {
 			width: 560px;
@@ -34,19 +35,8 @@
 			font-weight: bold;
 		}
 	</style>
-	<script type="application/javascript" src="https://crypto.cat/js/jquery.js"></script>
+	<script type="application/javascript" src="../js/jquery.js"></script>
 	<script type="application/javascript" src="js/chart.js"></script>
-</head>
-<body>
-	<div id="header">
-		<img src="https://crypto.cat/img/logo.png" alt="Cryptocat" id="logo">
-		<span id="title">Cryptocat Network Active Users</span>
-	</div>
-	<div id="chart"></div>
-	<p id="info">
-		Graph updates every minute.<br />
-		Statistics do not cover third-party Cryptocat networks.
-	</p>
 	<script type="application/javascript">
 		$(window).load(function() {
 	
@@ -120,5 +110,16 @@
 		
 		})
 	</script>
+</head>
+<body>
+	<div id="header">
+		<img src="../img/logo.png" alt="Cryptocat" id="logo" />
+		<span id="title">Cryptocat Network Active Users</span>
+	</div>
+	<div id="chart"></div>
+	<p id="info">
+		Graph updates every minute.<br />
+		Statistics do not cover third-party Cryptocat networks.
+	</p>
 </body>
 </html>
