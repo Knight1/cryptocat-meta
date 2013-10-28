@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8" />
-	<title>Cryptocat Network Active Users</title>
+	<title>Cryptocat Network Monitor</title>
 	<style type="text/css">
 		body {
 			background: #97CEEC;
@@ -12,7 +12,7 @@
 			margin: 40px auto 0 auto;
 			display: block;
 			width: 1000px;
-			height: 500px;
+			height: 450px;
 		}
 		div#header {
 			width: 560px;
@@ -30,9 +30,27 @@
 			font-size: 30px;
 			font-weight: bold;
 		}
+		span#subtitle {
+			display: block;
+			position: relative;
+			left: 22px;
+			vertical-align: 10px;
+			font-size: 18px;
+			font-weight: bold;
+			color: rgba(255, 255, 255, 0.65);
+			font-variant: small-caps;
+		}
 		p#info {
 			text-align: center;
-			font-weight: bold;
+			padding: 10px;
+			background: rgba(0, 0, 0, 0.6);
+			border-radius: 5px 0 5px 5px;
+			width: 450px;
+			margin: 0 auto;
+			font-size: 14px;
+		}
+		span.small {
+			font-size: 12px;
 		}
 	</style>
 	<script type="application/javascript" src="../js/jquery.js"></script>
@@ -51,35 +69,31 @@
 			scaleFontSize: 10,
 			scaleFontColor: '#FFF',
 			scaleFontStyle: 'bold',
-			animation: false,
 			pointDotRadius: 4,
 		}
 		
 		function updateChart() {
 			$.get('https://crypto.cat/monitor/c.txt', function(data) {
-				x.push(currentTime())
-				y.push(parseInt(data))
-				while (x.length > 128) {
-					x.splice(0, 1)
-				}
-				while (y.length > 128) {
-					y.splice(0, 1)
+				x = []
+				y = []
+				data = data.split('\n')
+				data.splice(data.length - 1, 1)
+				console.log(data)
+				for (var i in data) {
+					x.push(convertUnixTime(parseInt(data[i].match(/^\d+/)[0])))
+					y.push(data[i].match(/\d+$/)[0])
 				}
 				generateChart(x, y)
 			})
 		}
 		
-		function currentTime() {
-			var date = new Date()
-			var time = []
-			time.push(date.getHours().toString())
-			time.push(date.getMinutes().toString())
-			for (var just in time) {
-				if (time[just].length === 1) {
-					time[just] = '0' + time[just]
-				}
+		function convertUnixTime(unixTime) {
+			var date = new Date(unixTime * 1000);
+			var minutes = (date.getMinutes()).toString()
+			if (minutes.length === 1) {
+				minutes = '0' + minutes
 			}
-			return time.join(':')
+			return (date.getHours()) + ':' + minutes
 		}
 	
 		function generateChart(l, d) {
@@ -95,17 +109,14 @@
 					}
 				]
 			}
-			$('div#chart').html('<canvas id="myChart" width="1000" height="500"></canvas>')
+			$('div#chart').html('<canvas id="myChart" width="1000" height="450"></canvas>')
 			var ctx = $('canvas#myChart').get(0).getContext('2d')
 			var myChart = new Chart(ctx).Line(data, chartOptions)
 		}
 		
 		window.setInterval(function() {
 			updateChart()
-		}, 60000)
-		window.setTimeout(function() {
-			updateChart()
-		}, 1000)
+		}, 300000)
 		updateChart()
 		
 		})
@@ -114,12 +125,16 @@
 <body>
 	<div id="header">
 		<img src="../img/logo.png" alt="Cryptocat" id="logo" />
-		<span id="title">Cryptocat Network Active Users</span>
+		<span id="title">Cryptocat Network Monitor</span>
+		<span id="subtitle">current active cryptocat users</span>
 	</div>
 	<div id="chart"></div>
 	<p id="info">
-		Graph updates every minute.<br />
-		Statistics do not cover third-party Cryptocat networks.
+		<strong>Graph updates every five minutes.</strong><br />
+		<span class="small">
+			Statistics cover the last eight hours.<br />
+			Statistics do not cover third-party Cryptocat networks.
+		</span>
 	</p>
 </body>
 </html>
