@@ -8,12 +8,6 @@
 			color: #FFF;
 			font-family: sans-serif;
 		}
-		div#chart {
-			margin: 40px auto 0 auto;
-			display: block;
-			width: 1000px;
-			height: 450px;
-		}
 		div#header {
 			width: 560px;
 			margin: 0 auto;
@@ -35,10 +29,24 @@
 			position: relative;
 			left: 22px;
 			vertical-align: 10px;
-			font-size: 18px;
+			font-size: 20px;
 			font-weight: bold;
-			color: rgba(255, 255, 255, 0.65);
+			color: rgba(255, 255, 255, 0.7);
 			font-variant: small-caps;
+		}
+		div#currentTime {
+			text-align: center;
+			font-variant: small-caps;
+			display: block;
+			font-weight: bold;
+			margin-top: 10px;
+			font-size: 18px;
+		}
+		div#chart {
+			margin: 10px auto 0 auto;
+			display: block;
+			width: 1180px;
+			height: 450px;
 		}
 		p#info {
 			text-align: center;
@@ -88,6 +96,20 @@
 			}
 			return (date.getHours()) + ':' + minutes
 		}
+		
+		function currentTime(seconds) {
+	        var date = new Date()
+	        var time = []
+	        time.push(date.getHours().toString())
+	        time.push(date.getMinutes().toString())
+	        if (seconds) { time.push(date.getSeconds().toString()) }
+	        for (var just in time) {
+	                if (time[just].length === 1) {
+	                        time[just] = '0' + time[just]
+	                }
+	        }
+	        return time.join(':')
+		}
 	
 		function generateChart(l, d) {
 			var data = {
@@ -102,10 +124,15 @@
 					}
 				]
 			}
-			$('div#chart').html('<canvas id="myChart" width="1000" height="450"></canvas>')
+			$('div#chart').html('<canvas id="myChart" width="1180" height="450"></canvas>')
 			var ctx = $('canvas#myChart').get(0).getContext('2d')
 			var myChart = new Chart(ctx).Line(data, chartOptions)
 		}
+		
+		window.setInterval(function() {
+			$('div#currentTime').text(currentTime(true))
+		}, 1000)
+		$('div#currentTime').text(currentTime(true))
 		
 		window.setInterval(function() {
 			updateChart()
@@ -121,7 +148,11 @@
 		<span id="title">Cryptocat Network Monitor</span>
 		<span id="subtitle">current active cryptocat users</span>
 	</div>
+	
+	<div id="currentTime"></div>
+	
 	<div id="chart"></div>
+		
 	<p id="info">
 		<strong>Graph updates every five minutes.</strong><br />
 		<span class="small">
