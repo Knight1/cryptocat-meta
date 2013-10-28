@@ -73,12 +73,11 @@
 		}
 		
 		function updateChart() {
-			$.get('https://crypto.cat/monitor/c.txt', function(data) {
+			$.get('c.txt', function(data) {
 				x = []
 				y = []
 				data = data.split('\n')
 				data.splice(data.length - 1, 1)
-				console.log(data)
 				for (var i in data) {
 					x.push(convertUnixTime(parseInt(data[i].match(/^\d+/)[0])))
 					y.push(data[i].match(/\d+$/)[0])
@@ -133,7 +132,7 @@
 		<strong>Graph updates every five minutes.</strong><br />
 		<span class="small">
 			Statistics cover the last eight hours.<br />
-			Statistics do not cover third-party Cryptocat networks.
+			Third-party Cryptocat networks are not included.
 		</span>
 	</p>
 </body>
