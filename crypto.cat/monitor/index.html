@@ -57,21 +57,19 @@
 	<script type="application/javascript" src="js/chart.js"></script>
 	<script type="application/javascript">
 		$(window).load(function() {
-	
-		var x = []
-		var y = []
 		
 		var chartOptions = {
 			scaleFontSize: 10,
 			scaleFontColor: '#FFF',
 			scaleFontStyle: 'bold',
-			pointDotRadius: 4
+			pointDotRadius: 4,
+			animation: false
 		}
 		
 		function updateChart() {
 			$.get('c.txt', function(data) {
-				x = []
-				y = []
+				var x = []
+				var y = []
 				data = data.split('\n')
 				data.splice(data.length - 1, 1)
 				for (var i in data) {
@@ -111,7 +109,7 @@
 		
 		window.setInterval(function() {
 			updateChart()
-		}, 300000)
+		}, 60000)
 		updateChart()
 		
 		})
