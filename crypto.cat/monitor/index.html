@@ -53,10 +53,28 @@
 		var x = []
 		var y = []
 		
+		var chartOptions = {
+			scaleOverride: true,
+			scaleSteps: 12,
+			scaleStartValue: 0,
+			scaleStepWidth: 30,
+			scaleFontSize: 10,
+			scaleFontColor: '#FFF',
+			scaleFontStyle: 'bold',
+			animation: false,
+			pointDotRadius: 4,
+		}
+		
 		function updateChart() {
-			$.get('https://crypto.cat/stats/c.txt', function(data) {
+			$.get('https://crypto.cat/monitor/c.txt', function(data) {
 				x.push(currentTime())
 				y.push(parseInt(data))
+				while (x.length > 128) {
+					x.splice(0, 1)
+				}
+				while (y.length > 128) {
+					y.splice(0, 1)
+				}
 				generateChart(x, y)
 			})
 		}
@@ -87,25 +105,14 @@
 					}
 				]
 			}
-			var options = {
-				scaleOverride: true,
-				scaleSteps: 12,
-				scaleStartValue: 0,
-				scaleStepWidth: 30,
-				scaleFontSize: 14,
-				scaleFontColor: '#FFF',
-				scaleFontStyle: 'bold',
-				animation: false,
-				pointDotRadius: 6,
-			}
 			$('div#chart').html('<canvas id="myChart" width="1000" height="500"></canvas>')
 			var ctx = $('canvas#myChart').get(0).getContext('2d')
-			var myChart = new Chart(ctx).Line(data, options)
+			var myChart = new Chart(ctx).Line(data, chartOptions)
 		}
 		
 		window.setInterval(function() {
 			updateChart()
-		}, 61234)
+		}, 60000)
 		window.setTimeout(function() {
 			updateChart()
 		}, 1000)
