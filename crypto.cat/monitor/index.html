@@ -51,6 +51,10 @@
 			display: block;
 			width: 1180px;
 			height: 450px;
+			background-size: 65% auto;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-image: url('img/map.png');
 		}
 		p#info {
 			text-align: center;
@@ -80,7 +84,8 @@
 			scaleFontColor: '#FFF',
 			scaleFontStyle: 'bold',
 			pointDotRadius: 4,
-			animation: false
+			animation: false,
+			datasetStrokeWidth: 4
 		}
 		
 		function updateChart() {
@@ -125,7 +130,7 @@
 				labels: l,
 				datasets: [
 					{
-						fillColor: 'rgba(20, 100, 150, 0.4)',
+						fillColor: 'rgba(20, 100, 150, 0.5)',
 						strokeColor: '#FFF',
 						pointColor: 'rgba(151,187,205,1)',
 						pointStrokeColor: '#FFF',
