@@ -49,9 +49,9 @@
 		div#chart {
 			margin: 10px auto 0 auto;
 			display: block;
-			width: 1180px;
+			width: 1210px;
 			height: 450px;
-			background-size: 65% auto;
+			background-size: 60% auto;
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-image: url('img/map.png');
@@ -138,7 +138,7 @@
 					}
 				]
 			}
-			$('div#chart').html('<canvas id="myChart" width="1180" height="450"></canvas>')
+			$('div#chart').html('<canvas id="myChart" width="1210" height="450"></canvas>')
 			var ctx = $('canvas#myChart').get(0).getContext('2d')
 			var myChart = new Chart(ctx).Line(data, chartOptions)
 		}
