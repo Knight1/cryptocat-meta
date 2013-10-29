@@ -144,13 +144,14 @@
 		}
 		
 		window.setInterval(function() {
-			$('div#currentTime').text(currentTime(true))
+			var time = currentTime(true)
+			$('div#currentTime').text(time)
+			if ((time.substring(4) === '5:05') || (time.substring(4) === '0:05')) {
+				updateChart()
+			}
 		}, 1000)
-		$('div#currentTime').text(currentTime(true))
 		
-		window.setInterval(function() {
-			updateChart()
-		}, 150 * 1000)
+		$('div#currentTime').text(currentTime(true))
 		updateChart()
 		
 		})
