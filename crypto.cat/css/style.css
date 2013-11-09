@@ -139,6 +139,11 @@ div#map div#warning {
 	width: 500px;
 }
 
+div#map div#warning a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
 .picon {
 	font-family: 'Picons';
 	color: #97CEEC;
