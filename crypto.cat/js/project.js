@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 var downloadLink = {
 	'chrome': {
 		'text': 'Download Cryptocat for Chrome',
@@ -121,6 +123,21 @@ $('#cryptocatLink').click(function(e) {
 	scrollToAnchor('cryptocat')
 })
 
+$('.videoLink').click(function(e) {
+	e.preventDefault()
+	$('#videoWrapper').stop().fadeIn()
+	$('#videoBox').html(
+		'<iframe src="https://player.vimeo.com/video/38439169?title=0&amp;byline=0&amp;portrait=0&amp;color=78b4db&amp;autoplay=1" '
+		+ 'width="1000" height="563" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+	)
+})
+
+$('#videoWrapper').click(function() {
+	$(this).fadeOut(function() {
+		$('#videoBox').html('')
+	})
+})
+
 $('#warningLink').click(function(e) {
 	$(this).fadeOut()
 	e.preventDefault()
@@ -131,4 +148,6 @@ $('#warningLink').click(function(e) {
 $('#warningInfo').click(function(e) {
 	e.preventDefault()
 	$('#warningLink').click()
+})
+
 })
