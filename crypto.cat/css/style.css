@@ -48,7 +48,7 @@ h1 {
 }
 
 div#header h1 {
-	
+
 }
 
 ul, ol, li {
@@ -160,7 +160,7 @@ div#map div#header .picon {
 }
 
 div#map div#header a {
-	
+
 }
 
 div#map img#logo {
@@ -192,7 +192,7 @@ div#map img#logo {
 }
 
 #macStore span.apple {
-	font-size: 35px; 
+	font-size: 35px;
 	top: 12px;
 	right: 2px;
 }
@@ -327,17 +327,25 @@ div#footer .copyright {
 	font-weight: bold;
 }
 
-div#footer .social {
-	font-size: 40px;
-	text-align: right;
+div#footer .socialWrapper {
 	float: right;
-	margin: -80px 180px 0 0;
-	color: #FFF;
+	margin: -80px 200px 0 0;
 }
 
-div#footer .social a:hover {
+div#footer .socialWrapper a {
+	font-size: 40px;
+	text-align: center;
+	color: #FFF;
+	background: #97CEEC;
+	padding: 10px;
+	border-radius: 6px;
+	width: 40px;
+	height: 40px;
+	margin-left: 20px;
+}
+
+div#footer .socialWrapper a:hover {
 	text-decoration: none;
-	text-shadow: 2px 2px #FFF;
 }
 
 div#footer .IDLBadge {
