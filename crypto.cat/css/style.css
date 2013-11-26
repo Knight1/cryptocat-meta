@@ -354,11 +354,12 @@ div#footer .socialWrapper a {
 	text-align: center;
 	color: #FFF;
 	background: #97CEEC;
-	padding: 10px;
+	padding: 20px 10px 10px 10px;
 	border-radius: 6px;
 	width: 40px;
-	height: 40px;
+	height: 30px;
 	margin-left: 20px;
+	display: inline-block;
 }
 
 div#footer .socialWrapper a:hover {
