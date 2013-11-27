@@ -1,34 +1,34 @@
 $(document).ready(function() {
 
 var downloadLink = {
-	'chrome': {
+	'Chrome': {
 		'text': 'Download Cryptocat for Chrome',
 		'link': 'https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij'
 	},
-	'firefox': {
+	'Firefox': {
 		'text': 'Download Cryptocat for Firefox',
 		'link': 'https://addons.mozilla.org/en-US/firefox/addon/cryptocat/'
 	},
-	'safari': {
+	'Safari': {
 		'text': 'Download Cryptocat for Safari',
 		'link': 'https://crypto.cat/get/cryptocat.safariextz'
 	},
-	'opera': {
-		'text': 'Cryptocat is not available for your browser.',
+	'Opera': {
+		'text': 'Cryptocat for Opera is coming soon!',
 		'link': '#'
 	},
-	'internetExplorer': {
+	'Internet Explorer': {
 		'text': 'Cryptocat is not available for your browser.',
 		'link': '#'
 	}
 }
 
 if (document.URL.match('.cat/ca')) {
-	downloadLink['chrome']['text'] = 'Descarrega\'t Cryptocat per Chrome'
-	downloadLink['firefox']['text'] = 'Descarrega\'t Cryptocat per Firefox'
-	downloadLink['safari']['text'] = 'Descarrega\'t Cryptocat per Safari'
-	downloadLink['opera']['text'] = 'Cryptocat no està disponible per al teu navegador.'
-	downloadLink['internetExplorer']['text'] = 'Cryptocat no està disponible per al teu navegador.'
+	downloadLink['Chrome']['text'] = 'Descarrega\'t Cryptocat per Chrome'
+	downloadLink['Firefox']['text'] = 'Descarrega\'t Cryptocat per Firefox'
+	downloadLink['Safari']['text'] = 'Descarrega\'t Cryptocat per Safari'
+	downloadLink['Opera']['text'] = 'Cryptocat no està disponible per al teu navegador.'
+	downloadLink['Internet Explorer']['text'] = 'Cryptocat no està disponible per al teu navegador.'
 }
 
 var mediaQuotes = [
@@ -79,19 +79,19 @@ var mediaQuotes = [
 ]
 
 function detectBrowser() {
+	if (navigator.userAgent.match('OPR')) {
+		return 'Opera'
+	}
 	if (navigator.userAgent.match('Chrome')) {
-		return 'chrome'
+		return 'Chrome'
 	}
 	if (navigator.userAgent.match('Firefox')) {
-		return 'firefox'
-	}
-	if (navigator.userAgent.match('Opera')) {
-		return 'opera'
+		return 'Firefox'
 	}
 	if (navigator.userAgent.match('MSIE')) {
-		return 'internetExplorer'
+		return 'Internet Explorer'
 	}
-	return 'safari'
+	return 'Safari'
 }
 
 function scrollToAnchor(aid){
@@ -110,7 +110,7 @@ function displayQuote(n) {
 var browser = detectBrowser()
 $('.downloadLink').text(downloadLink[browser]['text'])
 $('.downloadLink').attr('href', downloadLink[browser]['link'])
-if (browser === 'chrome') {
+if (browser === 'Chrome') {
 	$('.downloadLink').click(function(e) {
 		e.preventDefault()
 		chrome.webstore.install('https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij')
