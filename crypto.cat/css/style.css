@@ -86,6 +86,22 @@ div#map div#nav {
 	top: 0;
 }
 
+div#donate {
+	display: none;
+	width: 100%;
+	background: #151520;
+	height: 40px;
+	padding: 20px 0 12px 0;
+	color: #FFF;
+	margin-bottom: -58px;
+	font-size: 14px;
+	text-align: center;
+}
+
+div#donate p {
+	display: block;
+}
+
 a#ca {
 	font-size: 10px;
 	margin-left: 20px;

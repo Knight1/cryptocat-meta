@@ -107,6 +107,10 @@ function displayQuote(n) {
 	})
 }
 
+$('a#donateLink').click(function() {
+	$('div#donate').slideDown()
+})
+
 var browser = detectBrowser()
 $('.downloadLink').text(downloadLink[browser]['text'])
 $('.downloadLink').attr('href', downloadLink[browser]['link'])
