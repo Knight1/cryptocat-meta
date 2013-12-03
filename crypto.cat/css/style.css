@@ -183,6 +183,7 @@ div#map img#logo {
 	margin: 0 0 0 20px;
 	width: 200px;
 	height: 200px;
+	image-rendering: optimizeSpeed;
 }
 
 #macStore {
