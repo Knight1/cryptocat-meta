@@ -58,11 +58,11 @@
 		}
 		p#info {
 			text-align: center;
-			padding: 10px;
-			background: rgba(0, 0, 0, 0.6);
+			padding: 15px;
+			background: rgba(0, 30, 80, 0.4);
 			border-radius: 5px 0 5px 5px;
 			width: 450px;
-			margin: 10px auto 0 auto;
+			margin: 20px auto 0 auto;
 			font-size: 14px;
 			line-height: 18px;
 		}
@@ -78,16 +78,20 @@
 	<script type="application/javascript" src="js/chart.js"></script>
 	<script type="application/javascript">
 		$(window).load(function() {
-		
+
 		var chartOptions = {
-			scaleFontSize: 10,
+			scaleFontSize: 11,
 			scaleFontColor: '#FFF',
 			scaleFontStyle: 'bold',
 			pointDotRadius: 4,
 			animation: false,
+			scaleOverride: true,
+			scaleSteps: 20,
+			scaleStepWidth: 30,
+			scaleStartValue: 0,
 			datasetStrokeWidth: 4
 		}
-		
+
 		function updateChart() {
 			$.get('c.txt', function(data) {
 				var x = []
@@ -101,7 +105,7 @@
 				generateChart(x, y)
 			})
 		}
-		
+
 		function convertUnixTime(unixTime) {
 			var date = new Date(unixTime * 1000);
 			var minutes = (date.getMinutes()).toString()
@@ -110,7 +114,7 @@
 			}
 			return (date.getHours()) + ':' + minutes
 		}
-		
+
 		function currentTime(seconds) {
 	        var date = new Date()
 	        var time = []
@@ -124,7 +128,7 @@
 	        }
 	        return time.join(':')
 		}
-	
+
 		function generateChart(l, d) {
 			var data = {
 				labels: l,
@@ -142,18 +146,19 @@
 			var ctx = $('canvas#myChart').get(0).getContext('2d')
 			var myChart = new Chart(ctx).Line(data, chartOptions)
 		}
-		
+
 		window.setInterval(function() {
 			var time = currentTime(true)
 			$('div#currentTime').text(time)
-			if ((time.substring(4) === '5:05') || (time.substring(4) === '0:05')) {
-				updateChart()
-			}
 		}, 1000)
-		
+
+		window.setTimeout(function() {
+			updateChart()
+		}, 60 * 1000)
+
 		$('div#currentTime').text(currentTime(true))
 		updateChart()
-		
+
 		})
 	</script>
 </head>
@@ -163,15 +168,15 @@
 		<span id="title">Cryptocat Network Monitor</span>
 		<span id="subtitle">current active cryptocat users</span>
 	</div>
-	
+
 	<div id="currentTime"></div>
-	
+
 	<div id="chart"></div>
-		
+
 	<p id="info">
-		<strong>Graph updates every five minutes.</strong><br />
+		<strong>Graph updates every fifteen minutes.</strong><br />
 		<span class="small">
-			Statistics cover the last eight hours.<br />
+			Statistics cover the last twenty-four hours.<br />
 			<span class="tiny">third-party cryptocat networks not included.</span>
 		</span>
 	</p>
