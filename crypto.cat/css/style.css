@@ -93,7 +93,7 @@ div#donate {
 	height: 40px;
 	padding: 20px 0 12px 0;
 	color: #FFF;
-	margin-bottom: -58px;
+	margin-bottom: -45px;
 	font-size: 14px;
 	text-align: center;
 }
@@ -103,7 +103,7 @@ div#donate p {
 }
 
 a#ca {
-	font-size: 10px;
+	font-size: 11px;
 	margin-left: 20px;
 	vertical-align: 6px;
 }
@@ -135,7 +135,7 @@ div#map div#header {
 	background: #97CEEC;
 	padding: 10px;
 	margin: 65px auto 20px auto;
-	height: 465px;
+	height: 445px;
 	width: 500px;
 	position: relative;
 	z-index: 2;
@@ -250,16 +250,16 @@ div#map div#header p {
 	display: block;
 	text-align: center;
 	border-radius: 6px 0 6px 6px;
-	background: rgba(250, 50, 50, 0.5);
-	width: 220px;
-	margin: 40px auto 10px auto;
+	margin: 32px auto 10px auto;
+	background: rgba(250, 50, 50, 0.1);
 	font-size: 16px;
-	padding: 9px;
+	padding: 3px;
+	width: 180px;
 }
 
 .videoLink:hover {
 	text-decoration: none;
-	background: rgba(250, 50, 50, 0.7);
+	background: rgba(250, 50, 50, 0.2);
 }
 
 #arrow, .smallArrow {
