@@ -14,8 +14,8 @@ var downloadLink = {
 		'link': 'https://crypto.cat/get/cryptocat.safariextz'
 	},
 	'Opera': {
-		'text': 'Cryptocat for Opera is coming soon!',
-		'link': '#'
+		'text': 'Download Cryptocat for Opera',
+		'link': 'https://addons.opera.com/en/extensions/details/cryptocat/'
 	},
 	'Internet Explorer': {
 		'text': 'Cryptocat is not available for your browser.',
@@ -27,7 +27,7 @@ if (document.URL.match('.cat/ca')) {
 	downloadLink['Chrome']['text'] = 'Descarrega\'t Cryptocat per Chrome'
 	downloadLink['Firefox']['text'] = 'Descarrega\'t Cryptocat per Firefox'
 	downloadLink['Safari']['text'] = 'Descarrega\'t Cryptocat per Safari'
-	downloadLink['Opera']['text'] = 'Cryptocat no està disponible per al teu navegador.'
+	downloadLink['Opera']['text'] = 'Descarrega\'t Cryptocat per Opera'
 	downloadLink['Internet Explorer']['text'] = 'Cryptocat no està disponible per al teu navegador.'
 }
 
