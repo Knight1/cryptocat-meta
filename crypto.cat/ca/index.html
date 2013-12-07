@@ -1,149 +1,80 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8" />
-	<meta name="author" content="The Cryptocat Project" />
 	<meta name="keywords" content="cryptocat, private chat, private im, secure im, secure chat,
 		encrypted chat, encrypted im, open source encrypted chat, crypto cat" />
-	<meta name="description" content="Cryptocat et permet xatejar amb privacitat. Una aplicació web que encripta de forma fàcil les teves converses. És de codi obert, està disponible en 32 llengües i és tan simple que ja la saps fer servir." />
+	<meta name="description" content="Cryptocat lets you chat with privacy. Easy to use web app that
+		encrypts your conversations. It's open source and you already know how to use it." />
 	<title>Cryptocat</title>
 	<link rel="stylesheet" href="../css/style.css" type="text/css" />
-	<link rel="icon" type="image/gif" href="../img/favicon.gif" />
+	<link rel="icon" type="image/gif" href="img/favicon.gif" />
 	<link rel="image_src" href="https://crypto.cat/img/logo.png" />
 	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij" />
 	<script type="application/javascript" src="../js/jquery.js"></script>
+	<script type="application/javascript" src="../js/website.js"></script>
 </head>
 <body>
-	<div id="videoWrapper">
-		<div id="videoBox">
-		</div>
+	<div class="nav">
+		<a href="https://blog.crypto.cat/" target="_blank">Bloc</a>
+		<a href="http://cryptocat.tictail.com">Botiga</a>
+		<a href="https://crypto.cat/">English</a>
 	</div>
-	<div id="map">
-		<div id="nav">
-			<span id="logotype">cryptocat</span>
-			<div id="navLinks">
-				<a href="#" id="donateLink">Donar</a>
-				<a href="https://github.com/cryptocat/cryptocat/wiki/" target="_blank">Documentació</a>
-				<a href="https://blog.crypto.cat/" target="_blank">Bloc</a>
-				<a href="http://cryptocat.tictail.com" target="_blank">Botiga</a>
-			</div>
+	<div id="top">
+		<div class="bubble" data-content="Make sure Cryptocat is right for you — read the warnings">
+			<img src="../img/logo.png" alt="" class="logo" />
+			<h1>Cryptocat</h1>
+			<p>Xatejar amb privacitat.</p>
+			<a href="#" id="downloadButton"></a>
 		</div>
-		<div id="donate">
+		<div class="mainDescription">
+			<h1>Missatgeria encriptada accessible a tothom.</h1>
 			<p>
-				Donar a través <strong style="color:#F79F43">Bitcoin</strong>: <span style="font-family:monospace">1PCpSTwiDEv4z4ACMYLbPTTaGCVUcj1Y61</span><br />
-				O l'ús de targeta de crèdit a través <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7LBV7JGNTLP86" target="_blank">PayPal</a>. Gràcies!
+				Cryptocat utilitza tecnologies web modernes per proporcionar un fàcil d'usar, xat encriptat accessible amb els teus amics, al teu navegador. Tot està codificada abans que deixi l'ordinador - fins i tot la pròpia xarxa Cryptocat no pot llegir els seus missatges. A més, Cryptocat és <a target="_blank" href="https://github.com/cryptocat/">codi obert</a> de programari.
 			</p>
-		</div>
-		<div id="header">
-			<img id="logo" src="../img/logo.png" alt="" />
-			<h1>Xatejar amb privacitat.</h1>
 			<p>
-				Una aplicació web que encripta de forma fàcil les teves converses. I és tan simple que ja la saps fer servir.
-				<br /><br />
-				<a class="downloadLink" href="#" target="_blank"></a>
-				<a class="videoLink" href="#">(Veure els cartoon!)</a>
+				<strong>Cryptocat està fet per al seu equip:</strong>
 				<br />
+				<a href="https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij">Chrome</a>
+				<a href="https://addons.mozilla.org/en-US/firefox/addon/cryptocat/">Firefox</a>
+				<a href="https://crypto.cat/get/cryptocat.safariextz">Safari</a>
+				<a href="https://addons.opera.com/en/extensions/details/cryptocat/">Opera</a>
+				<a href="https://itunes.apple.com/us/app/cryptocat/id613116229?ls=1&amp;mt=12">OS X</a>
+				<br />
+				<span class="tiny">... I és molt aviat per al teu mòbil. ;-)</span>
 			</p>
-		</div>
-		<div id="warning">
-			<strong>Atenció!</strong>
-			Cryptocat està encara en desenvolupament. <a href="#" id="warningInfo">Més informació</a>
+			<h1>Privacitat fet per a tothom.</h1>
+				<p>
+					Els amics fan server Cryptocat per parlar sense revelar els missatges a tercers. Els periodistes fan servir Cryptocat per manterir les seves recerques i notícies confidencials. Crytocat està fet per a tothom.
+				</p>
+				<div class="warnings">
+					L'objectiu de Cryptocat és oferir missatgeria instantània encriptada. Es molt important ser conscient de contra què no protegeix Cryptocat. <a href="#" id="warningsSeeMore">Veure més</a>
+					<ul>
+						<li><strong>Cryptocat no proporciona anonimitat:</strong> Encara que les teves comunicacions estàn encriptades, la teva identitat pot ser revelada ja que Cryptocat no oculta la teva adreça IP. Per a obtenir anonimitat, recomanem que facis servir <a href="https://torproject.org" target="_blank">Tor</a>.</li>
+						<li><strong>Cryptocat no protegeix contra <i>key loggers</i>:</strong> Els teus missatges estàn encryptats al viatgar per la xarxa, però aixo no implica que el teu teclat sigui segur. Cryptocat no protegeix contra programari o dispositius que monitoritzen el teu teclat i envien el que escrius a tercers.</li>
+						<li><strong>Cryptocat no protegeix contra persones dolentes:</strong> Gent amb qui parles pot filtrar els teus missatges sense el teu coneixement. L'objectiu de Cryptocat és garantitzar que només les persones amb qui parles reben els teus missatges, però aquestes persones no tenen perquè ser dignes de confiança.</li>
+					</ul>
+				</div>
+				<hr id="warningsScroll" />
+				<div id="bottomLinks">
+					<a href="https://blog.crypto.cat">Bloc</a>
+					<a href="https://github.com/cryptocat/cryptocat/wiki">Documentació</a>
+					<a href="https://github.com/cryptocat/cryptocat/issues/">Seguiment d'incidències</a>
+					<a href="https://crypto.cat/monitor/">Monitor</a>
+					<a href="https://crypto.cat/bughunt/">Bug hunt</a>
+					<a href="https://github.com/cryptocat/cryptocat/blob/master/CONTRIBUTING.md#contributors">Autors</a>
+					<a href="https://twitter.com/cryptocatapp">Twitter</a>
+					<a href="https://facebook.com/cryptocatapp">Facebook</a>
+					<hr />
+					Email: info@crypto.cat
+					<span style="text-align: right; float: right;">IRC: #cryptocat, irc.oftc.net</span>
+					<br /><br />
+					Donar: <a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=7LBV7JGNTLP86">PayPal</a>
+					<span style="text-align: right; float: right;">Bitcoin: 1PCpSTwiDEv4z4ACMYLbPTTaGCVUcj1Y61</span>
+				</div>
 		</div>
 	</div>
-	<div id="body">
-		<div id="arrow"></div>
-		<a id="cryptocat" class="cryptocatAnchor"></a>
-		<h1>Missatgeria encriptada accessible per a tothom.</h1>
-		<p class="picon">&#x5f;</p>
-		<p>
-			L'objectiu de Cryptocat és oferir un entorn de missatgeria instantània obert i accessible que funcioni directament al teu navegador.
-		</p>
-		<p class="picon">&#x43;</p>
-		<p>
-			Cryptocat és un experiment de codi obert - l'objectiu és proporcionar la forma més fàcil i accessible per xatejar mantenint la teva privacitat en línia, perquè creiem en la privacitat a Internet.
-		</p><br />
-		<hr /><div class="smallArrow"></div>
-		<h1>És útil per a tots.</h1>
-		<p class="picon">&#xd7;</p>
-		<p id="warnings">
-			Els amics fan server Cryptocat per parlar sense revelar els missatges a tercers. Els activistes de LGBTQ fan servir Cryptocat per a que els seus missatges privats siguin realment privats. Els periodistes fan servir Cryptocat per manterir les seves recerques i notícies confidencials.  Crytocat està fet per a tothom.
-		</p>
-		<p class="picon">&#x21;</p>
-		<p>
-			Cryptocat no és perfecte i encara està en desenvolupament. Mai deixis la teva vida en mans de cap programa. Cryptocat no es cap excepció. <a href="#warnings" id="warningLink">Llegeix les advertències.</a>
-		</p><br />
-		<div id="warningsBox">
-			<h1>Què no fa Cryptocat?</h1>
-			<p>L'objectiu de Cryptocat és oferir missatgeria instantània encriptada. Es molt important ser conscient de contra què <i>no</i> protegeix Cryptocat:</p>
-			<ul>
-				<li><strong>Cryptocat no proporciona anonimitat:</strong> Encara que les teves comunicacions estàn encriptades, la teva identitat pot ser revelada ja que Cryptocat no oculta la teva adreça IP. Per a obtenir anonimitat, recomanem que facis servir <a href="https://torproject.org" target="_blank">Tor</a>.</li>
-				<li><strong>Cryptocat no protegeix contra <i>key loggers</i>:</strong> Els teus missatges estàn encryptats al viatgar per la xarxa, però aixo no implica que el teu teclat sigui segur. Cryptocat no protegeix contra programari o dispositius que monitoritzen el teu teclat i envien el que escrius a tercers.</li>
-				<li><strong>Cryptocat no protegeix contra persones dolentes:</strong> Gent amb qui parles pot filtrar els teus missatges sense el teu coneixement. L'objectiu de Cryptocat és garantitzar que només les persones amb qui parles reben els teus missatges, però aquestes persones no tenen perquè ser dignes de confiança.</li>
-			</ul>
-		</div><br />
-		<hr /><div class="smallArrow"></div>
-		<h1 id="documentation">Codi obert, documentació oberta</h1>
-		<p class="picon">&#x46;</p>
-		<p>
-			Cryptocat es desenvolupa sota un principi de transparència radical. El nostre codi, la configuració dels servidors, les operacions de xarxa, les auditories, el finançament i tota la resta són públics per a la seva revisió, millora i control.
-		</p>
-		<p class="picon">&#x72;</p>
-		<p>
-			El nostre programari té la documentació totalment oberta. Passa't per la <a href="https://github.com/cryptocat/cryptocat/wiki/" target="_blank">wiki de desenvolupament</a> (en anglès) per a més informació sobre especificacions, documentació, configuracions de servidors, i altres qüestions tècniques.
-		</p>
-	</div>
-	<div id="footer">
-		<div id="footerContent">
-			<table>
-				<tr>
-					<td>
-						<h2>Contact</h2>
-						<ul>
-							<li><strong>Email</strong>: info@crypto.cat</li>
-							<li><strong>IRC</strong>: #cryptocat @ irc.oftc.net</li>
-						</ul>
-						...amb especial agraïment als contribuidors voluntaris.
-					</td>
-					<td>
-						<h2>Enllaços</h2>
-						<ul>
-							<li><a target="_blank" href="https://github.com/cryptocat/cryptocat/issues/">Bug tracker</i></a></li>
-							<li><a target="_blank" href="../monitor">Network monitor</a></li>
-							<li><a target="_blank" href="../bughunt">Bug hunt</a></li>
-							<li><a target="_blank" href="http://www.catalanculture.com/">Descobreix la cultura Catalana!</a></li>
-						</ul>
-					</td>
-					<td>
-						<h2>Descàrregues</h2>
-						<ul>
-							<li><a target="_blank" href="https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij">Cryptocat per Chrome</a></li>
-							<li><a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/cryptocat/">Cryptocat per Firefox</a></li>
-							<li><a target="_blank" href="https://crypto.cat/get/cryptocat.safariextz">Cryptocat per Safari</a></li>
-							<li><a target="_blank" href="https://addons.opera.com/en/extensions/details/cryptocat/">Cryptocat per Opera</a></li>
-							<li><a target="_blank" href="https://itunes.apple.com/us/app/cryptocat/id613116229?ls=1&amp;mt=12">Cryptocat per Mac</a></li>
-						</ul>
-					</td>
-				</tr>
-			</table>
-		</div>
-		<span class="copyright">
-			© 2011 — 2013. Cryptocat ™ i el logotip de Cryptocat són marques registrades.
-		</span>
-		<div class="socialWrapper">
-			<span class="picon">
-				<a href="https://twitter.com/cryptocatapp" target="_blank">t</a>
-				<a href="https://facebook.com/cryptocatapp" target="_blank">f</a>
-			</span>
-		</div>
-		<a href="http://internetdefenseleague.org/">
-			<img src="../img/IDLBadge.png" alt="Member of The Internet Defense League" class="IDLBadge" />
-		</a>
-	</div>
-
-	<script type="application/javascript" src="../js/project.js"></script>
-
 	<script src="https://static.getclicky.com/js" type="text/javascript"></script>
 	<script type="text/javascript">try{ clicky.init(100625202); }catch(e){}</script>
 	<noscript><p><img alt="" width="1" height="1" src="https://in.getclicky.com/100625202ns.gif" /></p></noscript>
-
 </body>
 </html>

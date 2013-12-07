@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8" />
-	<meta name="author" content="The Cryptocat Project" />
 	<meta name="keywords" content="cryptocat, private chat, private im, secure im, secure chat,
 		encrypted chat, encrypted im, open source encrypted chat, crypto cat" />
 	<meta name="description" content="Cryptocat lets you chat with privacy. Easy to use web app that
@@ -12,139 +11,70 @@
 	<link rel="image_src" href="https://crypto.cat/img/logo.png" />
 	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij" />
 	<script type="application/javascript" src="js/jquery.js"></script>
+	<script type="application/javascript" src="js/website.js"></script>
 </head>
 <body>
-	<div id="videoWrapper">
-		<div id="videoBox">
-		</div>
+	<div class="nav">
+		<a href="https://blog.crypto.cat/" target="_blank">Blog</a>
+		<a href="http://cryptocat.tictail.com">Store</a>
+		<a href="https://crypto.cat/ca/">Català</a>
 	</div>
-	<div id="map">
-		<div id="nav">
-			<span id="logotype">cryptocat</span>
-			<a id="ca" href="ca">per al català, clic aquí</a>
-			<div id="navLinks">
-				<a href="#" id="donateLink">Donate</a>
-				<a href="https://github.com/cryptocat/cryptocat/wiki/" target="_blank">Documentation</a>
-				<a href="https://blog.crypto.cat/" target="_blank">Blog</a>
-				<a href="http://cryptocat.tictail.com" target="_blank">Store</a>
-			</div>
+	<div id="top">
+		<div class="bubble" data-content="Make sure Cryptocat is right for you — read the warnings">
+			<img src="img/logo.png" alt="" class="logo" />
+			<h1>Cryptocat</h1>
+			<p>Chat with privacy.</p>
+			<a href="#" id="downloadButton"></a>
 		</div>
-		<div id="donate">
+		<div class="mainDescription">
+			<h1>Private chat can be easy and accessible.</h1>
 			<p>
-				Donate via <strong style="color:#F79F43">Bitcoin</strong>: <span style="font-family:monospace">1PCpSTwiDEv4z4ACMYLbPTTaGCVUcj1Y61</span><br />
-				Or using credit card via <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7LBV7JGNTLP86" target="_blank">PayPal</a>. Thank you!
+				Cryptocat uses modern web technologies to provide easy to use, accessible encrypted chat with your friends, right in your browser. Everything is encrypted before it leaves your computer — even the Cryptocat network itself can't read your messages. Plus, Cryptocat is <a target="_blank" href="https://github.com/cryptocat/">open source</a> software.
 			</p>
-		</div>
-		<div id="header">
-			<img id="logo" src="img/logo.png" alt="" />
-			<h1>Chat with privacy.</h1>
 			<p>
-				Cryptocat makes it easy to have private, encrypted conversations with friends.
-				<br /><br />
-				<a class="downloadLink" href="#" target="_blank"></a>
-				<a class="videoLink" href="#">(Watch the cartoon!)</a>
+				<strong>Cryptocat is made for your desktop:</strong>
+				<br />
+				<a href="https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij">Chrome</a>
+				<a href="https://addons.mozilla.org/en-US/firefox/addon/cryptocat/">Firefox</a>
+				<a href="https://crypto.cat/get/cryptocat.safariextz">Safari</a>
+				<a href="https://addons.opera.com/en/extensions/details/cryptocat/">Opera</a>
+				<a href="https://itunes.apple.com/us/app/cryptocat/id613116229?ls=1&amp;mt=12">OS X</a>
+				<br />
+				<span class="tiny">...and is coming soon for your mobile. ;-)</span>
 			</p>
-		</div>
-		<div id="warning">
-			<strong>Is Cryptocat right for you? </strong>
-			Check out the <a href="#" id="warningInfo">list of warnings.</a>
+			<h1>Privacy made for everyone.</h1>
+				<p>
+					Friends use Cryptocat to talk without revealing messages to a third party. People use Cryptocat as an alternative to Facebook Chat or Skype to help guarantee their right to privacy. Cryptocat is made for everyone.
+				</p>
+				<div class="warnings">
+					Cryptocat is not a magic bullet. Even though Cryptocat provides useful encryption, you should never trust any piece of software with your life, and Cryptocat is no exception. <a href="#" id="warningsSeeMore">See more</a>
+					<ul>
+						<li><strong>Cryptocat does not anonymize you:</strong> While your communications are encrypted, your identity can still be traced since Cryptocat does not mask your IP address. For anonymization, we highly recommend using <a href="https://torproject.org" target="_blank">Tor</a>.</li>
+						<li><strong>Cryptocat does not protect against key loggers:</strong> Your messages are encrypted as they go through the wire, but that doesn't mean that your keyboard is necessarily safe. Cryptocat does not protect against hardware or software key loggers which might be snooping on your keyboard strokes and sending them to an undesired third party.</li>
+						<li><strong>Cryptocat does not protect against untrustworthy people:</strong> Parties you're conversing with may still leak your messages without your knowledge. Cryptocat aims to make sure that only the parties you're talking to get your messages, but that doesn't mean these parties are necessarily trustworthy.</li>
+					</ul>
+				</div>
+				<hr id="warningsScroll" />
+				<div id="bottomLinks">
+					<a href="https://blog.crypto.cat">Blog</a>
+					<a href="https://github.com/cryptocat/cryptocat/wiki">Documentation</a>
+					<a href="https://github.com/cryptocat/cryptocat/issues/">Issue tracker</a>
+					<a href="https://crypto.cat/monitor/">Network monitor</a>
+					<a href="https://crypto.cat/bughunt/">Bug hunt</a>
+					<a href="https://github.com/cryptocat/cryptocat/blob/master/CONTRIBUTING.md#contributors">Authors</a>
+					<a href="https://twitter.com/cryptocatapp">Twitter</a>
+					<a href="https://facebook.com/cryptocatapp">Facebook</a>
+					<hr />
+					Email: info@crypto.cat
+					<span style="text-align: right; float: right;">IRC: #cryptocat, irc.oftc.net</span>
+					<br /><br />
+					Donate: <a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=7LBV7JGNTLP86">PayPal</a>
+					<span style="text-align: right; float: right;">Bitcoin: 1PCpSTwiDEv4z4ACMYLbPTTaGCVUcj1Y61</span>
+				</div>
 		</div>
 	</div>
-	<div id="body">
-		<div id="arrow"></div>
-		<a id="cryptocat" class="cryptocatAnchor"></a>
-		<h1>Private chat can be easy and accessible.</h1>
-		<p class="picon">&#x5f;</p>
-		<p>
-			Cryptocat is free software that aims to provide an open, accessible Instant Messaging environment that encrypts your conversations and works right in your browser.
-		</p>
-		<p class="picon">&#x43;</p>
-		<p>
-			Cryptocat is an open source experiment — the goal is to provide the easiest, most accessible way to chat while maintaining your privacy online, <strong>because privacy needs to be accessible.</strong>
-		</p><br />
-		<hr /><div class="smallArrow"></div>
-		<h1>It's useful for everyone.</h1>
-		<p class="picon">&#xd7;</p>
-		<p id="warnings">
-			Friends use Cryptocat to talk without revealing messages to a third party. People use Cryptocat as an alternative to Facebook Chat or Skype to help guarantee their right to privacy. Cryptocat is made for everyone.
-		</p>
-		<p class="picon">&#x21;</p>
-		<p>
-			Cryptocat is not a magic bullet. You should never trust any piece of software with your life, and Cryptocat is no exception. <a href="#warnings" id="warningLink">Read the full list of warnings.</a>
-		</p>
-		<div id="warningsBox">
-			<h1>What Cryptocat Doesn't Do</h1>
-			<p>While Cryptocat aims to offer strongly encrypted, private Instant Messaging, it's important to note what Cryptocat does <i>not</i> protect you against:</p>
-			<ul>
-				<li><strong>Cryptocat does not anonymize you:</strong> While your communications are encrypted, your identity can still be traced since Cryptocat does not mask your IP address. For anonymization, we highly recommend using <a href="https://torproject.org" target="_blank">Tor</a>.</li>
-				<li><strong>Cryptocat does not protect against key loggers:</strong> Your messages are encrypted as they go through the wire, but that doesn't mean that your keyboard is necessarily safe. Cryptocat does not protect against hardware or software key loggers which might be snooping on your keyboard strokes and sending them to an undesired third party.</li>
-				<li><strong>Cryptocat does not protect against untrustworthy people:</strong> Parties you're conversing with may still leak your messages without your knowledge. Cryptocat aims to make sure that only the parties you're talking to get your messages, but that doesn't mean these parties are necessarily trustworthy.</li>
-			</ul>
-		</div><br />
-		<hr /><div class="smallArrow"></div>
-		<h1 id="documentation">Open source, open documentation.</h1>
-		<p class="picon">&#x46;</p>
-		<p>
-			Cryptocat is developed under a principle of <strong>radical transparency</strong>. Our code, server configuration, network operations, audits, funding and everything in between is released for review, improvement and scrutiny.
-		</p>
-		<p class="picon">&#x72;</p>
-		<p>
-			Our software is openly documented. Head over to the <a href="https://github.com/cryptocat/cryptocat/wiki/" target="_blank">development wiki</a> for threat models, server configurations, architecture lifecycle documents and more.
-		</p>
-	</div>
-	<div id="footer">
-		<div id="footerContent">
-			<table>
-				<tr>
-					<td>
-						<h2>Contact</h2>
-						<ul>
-							<li><strong>Email</strong>: info@crypto.cat</li>
-							<li><strong>IRC</strong>: #cryptocat @ irc.oftc.net</li>
-						</ul>
-						...with special thanks to our volunteers.<br />
-					</td>
-					<td>
-						<h2>Links</h2>
-						<ul>
-							<li><a target="_blank" href="https://github.com/cryptocat/cryptocat/issues/">Bug tracker</a></li>
-							<li><a target="_blank" href="monitor">Network monitor</a></li>
-							<li><a target="_blank" href="bughunt">Bug hunt</a></li>
-							<li><a target="_blank" href="http://www.catalanculture.com/">Discover Catalan culture!</a></li>
-						</ul>
-					</td>
-					<td>
-						<h2>Downloads</h2>
-						<ul>
-							<li><a target="_blank" href="https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij">Cryptocat for Chrome</a></li>
-							<li><a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/cryptocat/">Cryptocat for Firefox</a></li>
-							<li><a target="_blank" href="https://crypto.cat/get/cryptocat.safariextz">Cryptocat for Safari</a></li>
-							<li><a target="_blank" href="https://addons.opera.com/en/extensions/details/cryptocat/">Cryptocat for Opera</a></li>
-							<li><a target="_blank" href="https://itunes.apple.com/us/app/cryptocat/id613116229?ls=1&amp;mt=12">Cryptocat for Mac</a></li>
-						</ul>
-					</td>
-				</tr>
-			</table>
-		</div>
-		<span class="copyright">
-			© 2011 — 2013. Cryptocat™ and the Cryptocat logo are registered trademarks.
-		</span>
-		<div class="socialWrapper">
-			<span class="picon">
-				<a href="https://twitter.com/cryptocatapp" target="_blank">t</a>
-				<a href="https://facebook.com/cryptocatapp" target="_blank">f</a>
-			</span>
-		</div>
-		<a href="http://internetdefenseleague.org/">
-			<img src="img/IDLBadge.png" alt="Member of The Internet Defense League" class="IDLBadge" />
-		</a>
-	</div>
-
-	<script type="application/javascript" src="js/project.js"></script>
-
 	<script src="https://static.getclicky.com/js" type="text/javascript"></script>
 	<script type="text/javascript">try{ clicky.init(100625202); }catch(e){}</script>
 	<noscript><p><img alt="" width="1" height="1" src="https://in.getclicky.com/100625202ns.gif" /></p></noscript>
-
 </body>
 </html>
