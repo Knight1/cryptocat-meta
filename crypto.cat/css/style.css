@@ -11,7 +11,6 @@ Fonts
 	src: url('../fonts/monda.woff') format('woff');
 }
 
-
 /*
 -------------------
 Body and main tags
@@ -88,7 +87,6 @@ div.nav a {
 Bubble
 -------------------
 */
-
 
 div.bubble {
 	width: 350px;
