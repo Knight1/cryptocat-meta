@@ -89,8 +89,4 @@ $('a#warningsSeeMore').click(function() {
 	scrollToAnchor('warningsScroll')
 })
 
-$('a.donateLink').click(function() {
-
-})
-
 })
