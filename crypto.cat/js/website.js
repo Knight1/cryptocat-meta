@@ -70,7 +70,7 @@ var browser = detectBrowser()
 $('a#downloadButton').text(downloadLink[browser]['text'])
 $('a#downloadButton').attr('href', downloadLink[browser]['link'])
 if (browser === 'Chrome') {
-	$('a#downloadButton').click(function(e) {
+	$('a.chromeDownloadLink').click(function(e) {
 		e.preventDefault()
 		chrome.webstore.install('https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij')
 	})
