@@ -2,7 +2,7 @@
 	font-family: 'Monda';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Monda Regular'), local('Monda-Regular'), url('Monda.woff') format('woff');
+	src: local('Monda Regular'), local('Monda-Regular'), url('../fonts/monda.woff') format('woff');
 }
 
 body {
