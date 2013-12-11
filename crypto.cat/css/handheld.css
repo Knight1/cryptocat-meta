@@ -1,0 +1,212 @@
+/*
+-------------------
+Fonts
+-------------------
+*/
+
+@font-face {
+	font-family: 'Monda';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/monda.woff') format('woff');
+}
+
+/*
+-------------------
+Body and main tags
+-------------------
+*/
+
+body {
+	background: #61A2F5;
+	margin: 0 10px 40px 10px;
+	font-family: 'Helvetica', sans-serif;
+	color: #FFF;
+	font-size: 20px;
+}
+
+a {
+	color: #FFF;
+	font-weight: 600;
+	text-decoration: none;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 4px 0 4px 4px;
+	padding: 4px 8px;
+}
+
+a:hover {
+	background: rgba(255, 255, 255, 0.55);
+}
+
+ul {
+	line-height: 30px;
+	list-style-type: square;
+}
+
+hr {
+	height: 6px;
+	border-radius: 2px 0 2px 2px;
+	margin: 20px 0;
+	background: rgba(255, 255, 255, 0.35);
+	border: none;
+}
+
+div#top {
+	margin: 0 auto 40px auto;
+	height: 500px;
+	width: 440px;
+}
+
+/*
+-------------------
+Navigation bar
+-------------------
+*/
+
+div.nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	padding: 5px 15px;
+	background: rgba(97, 162, 245, 0.9);
+	border-bottom: 2px solid #61A2F5;
+	text-align: right;
+}
+
+div.nav a {
+	font-weight: bold;
+	font-family: 'Monda';
+	font-size: 16px;
+	margin-left: 20px;
+	padding: 0 8px;
+}
+
+/*
+-------------------
+Bubble
+-------------------
+*/
+
+div.bubble {
+	width: 350px;
+	height: 350px;
+	background: rgba(255, 255, 255, 0.75);
+	border-radius: 15px 0 15px 15px;
+	margin: 60px auto 0 auto;
+	box-shadow: 12px 12px rgba(255, 255, 255, 0.3);
+	padding: 20px;
+	text-align: center;
+	color: #000;
+	font-family: 'Monda';
+}
+
+div.bubble:after {
+	content: attr(data-content);
+	color: #FFF;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 11px;
+	display: block;
+	border-radius: 0 0 15px 15px;
+	background: rgba(255, 150, 100, 0.85);
+	font-weight: bold;
+	width: 390px;
+	margin: 13px auto 0 auto;
+	position: relative;
+	right: 20px;
+	padding: 5px 0;
+}
+
+img.logo {
+	width: 192px;
+	margin: 0 auto;
+	display: block;
+	image-rendering: optimizeSpeed;
+}
+
+div.bubble h1 {
+	margin: 0;
+}
+
+div.bubble p {
+	margin: 0 0 12px 0;
+}
+
+a#downloadButton {
+	padding: 2px 6px;
+	border-radius: 6px 0 6px 6px;
+	background: rgba(255, 255, 255, 0.7);
+	text-decoration: none;
+	color: #61A2F5;
+	font-size: 26px;
+	box-shadow: 4px 4px #A2C8F7;
+}
+
+a#downloadButton:hover {
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 4px 4px #A9D5FF;
+}
+
+/*
+-------------------
+Main description
+-------------------
+*/
+
+div.mainDescription {
+	margin: 45px auto 40px auto;
+	width: 400px;
+}
+
+div.mainDescription h1 {
+	font-family: 'Monda';
+	font-size: 28px;
+}
+
+div.mainDescription p {
+	line-height: 30px;
+}
+
+span.tiny {
+	margin-top: 10px;
+	display: block;
+	font-size: 12px;
+}
+
+div.warnings {
+	background: rgba(255, 150, 100, 0.85);
+	opacity: 0.95;
+	padding: 10px;
+	line-height: 30px;
+	border-radius: 10px 0 10px 10px;
+	font-size: 14px;
+	height: 83px;
+	overflow: hidden;
+}
+
+/*
+-------------------
+Bottom links
+-------------------
+*/
+
+div#bottomLinks {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+	text-align: left;
+}
+
+div#bottomLinks a {
+	padding: 0;
+	margin-right: 18px;
+	background: none;
+}
+
+div#bottomLinks a:hover {
+	text-decoration: underline;
+}
+
+div#donate {
+	display: none;
+}

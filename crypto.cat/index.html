@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="
+		user-scalable=no, initial-scale=0.7,
+		maximum-scale=0.7, minimum-scale=0.7,
+		width=device-width, height=device-height,
+		target-densitydpi=device-dpi"
+	/>
 	<meta name="keywords" content="cryptocat, private chat, private im, secure im, secure chat,
 		encrypted chat, encrypted im, open source encrypted chat, crypto cat" />
 	<meta name="description" content="Cryptocat lets you chat with privacy. Easy to use web app that
 		encrypts your conversations. It's open source and you already know how to use it." />
 	<title>Cryptocat</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/handheld.css" type="text/css" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)" />
+	<link rel="stylesheet" href="css/screen.css" type="text/css" media="only screen and (min-width: 701px), only screen and (min-device-width: 701px)" />
 	<link rel="icon" type="image/gif" href="img/favicon.gif" />
 	<link rel="image_src" href="https://crypto.cat/img/logo.png" />
 	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/gonbigodpnfghidmnphnadhepmbabhij" />
@@ -63,8 +70,10 @@
 				Email: info@crypto.cat
 				<span style="text-align: right; float: right;">IRC: #cryptocat, irc.oftc.net</span>
 				<br /><br />
-				Donate: <a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=7LBV7JGNTLP86">PayPal</a>
-				<span style="text-align: right; float: right;">Bitcoin: 1PCpSTwiDEv4z4ACMYLbPTTaGCVUcj1Y61</span>
+				<div id="donate">
+					Donate: <a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=7LBV7JGNTLP86">PayPal</a>
+					<span style="text-align: right; float: right;">Bitcoin: 1PCpSTwiDEv4z4ACMYLbPTTaGCVUcj1Y61</span>
+				</div>
 			</div>
 		</div>
 	</div>
