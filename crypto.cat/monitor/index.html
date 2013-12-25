@@ -103,7 +103,7 @@
 					x.push(convertUnixTime(parseInt(data[i].match(/^\d+/)[0])))
 					y.push(data[i].match(/\d+$/)[0])
 				}
-				chartOptions.scaleSteps = 1 + Math.ceil(
+				chartOptions.scaleSteps = 2 + Math.ceil(
 					y.slice(0).sort().reverse()[0] / chartOptions.scaleStepWidth
 				)
 				generateChart(x, y)
